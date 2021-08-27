@@ -1,0 +1,195 @@
+.Intro,.fin, h1, .skills-title
+{
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: "Arial Black", Calibri, sans-serif;
+    text-align: center;
+    background-color: #00a6ff;
+    border: 3px black solid;
+    box-shadow: 6px 5px 6px black
+}
+.fin{
+    margin-top: 40px;
+}
+
+h2
+{
+    text-align: center;
+    background-color: #dc2626;
+    font-weight: bold;
+    font-family: "Arial Black", Calibri, sans-serif;
+    border: 3px black solid;
+    box-shadow: 6px 5px 6px black
+}
+
+body {
+    background-color: #393434;
+}
+
+#photo {
+    border: 4px solid black;
+    box-shadow: black 0 0 10px 2px;
+    background: black;
+    display: flex;
+    max-width: 13.5%;
+    border-radius: 15px;
+    margin: 20px auto;
+}
+
+
+.presentation {
+    font-family: "Arial Black", sans-serif;
+    background-color: rgb(60, 60, 60);
+    border-radius: 20px;
+    font-size: 1.2em;
+    padding: 8px;
+    color: rgba(220, 220, 220, 1);
+    text-align: center;
+    text-shadow: 4px 0 10px black;
+}
+
+#CVimage, .CV {
+    width: 200px;
+    margin: auto;
+    display: flex;
+    transition: transform .2s;
+}
+
+#CVimage:hover {
+    transition: transform 0.2s;
+    transform: scale(1.12);
+}
+
+.fin {
+    background-color: limegreen;
+}
+
+.flip-box {
+
+    background-color: transparent;
+    width: 485px;
+    height: 295px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    box-shadow: 7px 7px 7px 7px;
+}
+
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align:center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    font-size: 20px;
+    font-family: ".Helvetica Neue Interface", sans-serif;
+}
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-box-front {
+    background-color: #bbb;
+    color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.placement{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    justify-content: center /* (center/space-evenly/space-around)  */
+}
+
+.lien {
+    width: 10%;
+}
+
+.autres{
+    font-size: 1.4em;
+    font-family: "Arial Black", sans-serif;
+    margin: 60px auto 60px;
+    border: #050000 0.2em solid;
+    background-color: #e1fa03;
+    box-shadow: 9px 10px black;
+    border-radius: 80px 40px;
+    padding: 5px 15px;
+    display: table;
+}
+/* --------------------------------- */
+.skills-title{
+    background-color: #ec8208;
+}
+
+.skills{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+.skills *{
+    border: #0c0c0c 5px solid;
+    font-family: "Arial Black", sans-serif;
+    border-radius: 40px 20px;
+    padding: 10px 30px;
+    margin-top: 15px;
+    box-shadow: 6px 6px;
+}
+
+#python{
+    background: #fddb02;
+}
+#html{
+    background: #c20909;
+}
+#css{
+    background: #02b8f1;
+}
+#java{
+    background: #f17a02;
+}
+#processing{
+    background: #e15419;
+}
+#montage\ video{
+    background: #0bd304;
+}
+#montage\ photo{
+    background: #befc05;
+}
+#pack\ office{
+    background: #98491d;
+}
+#elearning{
+    background: #5b67f3;
+}
+
+
+/* --------------------------------- */
+.contact{
+    margin: 18px;
+    transition: transform .2s; /* Animation */
+}
+.contacts{
+    display: flex;
+    justify-content: center;
+}
+.contact:hover {
+    transform: scale(1.2);
+}
