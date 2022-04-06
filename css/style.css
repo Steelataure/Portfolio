@@ -642,4 +642,9 @@ h2 {
 
 #CVimage{
   max-width: 20%;
+   transition: transform .2s;
+}
+
+#CVimage:hover {
+    transform: scale(1.12);
 }
