@@ -13,13 +13,11 @@ OU vous pouvez aussi :
 * d'extraire les fichiers
 * lancer **`index.html`**
 
-***
 
 ##  Description du projet 
 
 J'ai crée ce site web afin d'y afficher une partie de mes projets et de mes compétences.
 
-***
 
 ## Auteur
 
