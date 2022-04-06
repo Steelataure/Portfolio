@@ -2,7 +2,7 @@
 
 #stars-container {
   height: 100vh;
-  width: 100%;
+  width: 200%;
   background: radial-gradient(ellipse at bottom, #020911 0%, #151618 100%);
   overflow: hidden;
   -webkit-transform: translate(-50, -50%);
