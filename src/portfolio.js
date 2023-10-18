@@ -1,6 +1,8 @@
 /* Change this file to get your personal Portfolio */
 
 // To change portfolio colors globally go to the  _globalColor.scss file
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
@@ -93,7 +95,7 @@ const workExperiences = {
       company: "Harmonie Mutuelle",
       companylogo: require("./assets/images/HM.jpg"),
       date: "2022 - 2023",
-      desc: "J'ai contribué au développement d'applications web, à la gestion de bases de données, et à l'automatisation des tâches",
+      desc: "",
       descBullets: [
         "Développement d'applications web sous le Framework Zend Framework/Laminas",
         "Déploiement et maintenance d'applications sur des serveurs Linux",
@@ -108,7 +110,7 @@ const workExperiences = {
       company: "Orange",
       companylogo: require("./assets/images/orange.png"),
       date: "2020 - 2022",
-      desc: "J'ai collaboré avec l'École des Métiers Techniques (EMT) d'Orange pour produire diverses ressources numériques, dont :",
+      desc: "",
       descBullets: [
         "Vidéo : Scénarisation, captation, montage, post-production, mise en ligne sur notre système d'information",
         "Mobile Learning : Création de micro-modules et campagnes de quiz",
@@ -131,7 +133,7 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Projets",
+  title: "Quelques Projets",
   subtitle: "",
   projects: [
     {
@@ -140,9 +142,9 @@ const bigProjects = {
       projectDesc: "",
       footerLink: [
         {
-          name: "Site web",
+          name: "Github",
           url: "https://github.com/Steelataure/GameOfSteel"
-        }
+        },
       ]
     },
     {
@@ -152,7 +154,11 @@ const bigProjects = {
       footerLink: [
         {
           name: "Site web",
-          url: "cooktail.rf.gd/cocktail/"
+          url: "http://cooktail.rf.gd/cocktail/"
+        },
+        {
+          name: "Github",
+          url: "https://github.com/Steelataure/Cooktail"
         }
       ]
     },
@@ -162,19 +168,23 @@ const bigProjects = {
       projectDesc: "",
       footerLink: [
         {
-          name: "Site web",
-          url: ""
+          name: "Github",
+          url: "https://github.com/Steelataure/DefonceCubes3D"
         }
       ]
     },
     {
       image: require("./assets/images/Targus.png"),
       projectName: "Jauge Covid",
-      projectDesc: "Site de mesure de clients",
+      projectDesc: "",
       footerLink: [
         {
           name: "Site web",
-          url: ""
+          url: "http://jaugecovid.rf.gd/index.php?i=1"
+        },
+        {
+          name: "Github",
+          url: "https://github.com/Steelataure/Jauge-Covid"
         }
       ]
     },
@@ -185,7 +195,11 @@ const bigProjects = {
       footerLink: [
         {
           name: "Site web",
-          url: ""
+          url: "https://b3-dev-pokedex.000webhostapp.com/ "
+        },
+        {
+          name: "Github",
+          url: "https://github.com/Steelataure/Pokedex"
         }
       ]
     },
