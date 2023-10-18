@@ -4,7 +4,7 @@ env:
   GITHUB_USERNAME: ${{ github.repository_owner }}
   REACT_APP_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This is automatically set by Github Actions
   USE_GITHUB_DATA: "true"
-  MEDIUM_USERNAME: "saadpasta" # Change this to your medium username
+  MEDIUM_USERNAME: "Steelataure" # Change this to your medium username
 on:
   workflow_dispatch:
   push:
@@ -16,24 +16,24 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
+      - name: Checkout 
         uses: actions/checkout@v3 # If you're using actions/checkout@v3 you must set persist-credentials to false in most cases for the deployment to work correctly.
         with:
           persist-credentials: false
 
-      - name: Setup Node.js 🔧
+      - name: Setup Node.js 
+
         uses: actions/setup-node@v3.8.1
         with:
           node-version: 18.x
-
-      - name: Update npm 🚀
+      - name: Update npm 
         run: npm install -g npm@latest
 
-      - name: Install and Build 🔧 # Build the Project
+      - name: Install and Build  # Build the Project
         run: |
           npm install
           npm run build
-      - name: Deploy 🚀
+      - name: Deploy 
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           GITHUB_TOKEN : ${{ secrets.GITHUB_TOKEN }} # This is provided by GitHub.

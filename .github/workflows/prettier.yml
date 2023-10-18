@@ -8,7 +8,7 @@ jobs:
   check-format:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
+      - name: Checkout
         uses: actions/checkout@v2
         with:
           persist-credentials: false
@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: 18.x
       
-      - name: Install 🔧 # Install dependencies
+      - name: Install # Install dependencies
         run: |
           npm install
       
