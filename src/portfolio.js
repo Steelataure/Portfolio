@@ -142,6 +142,17 @@ const bigProjects = {
       ]
     },
     {
+      image: require("./assets/images/defoncecube.gif"),
+      projectName: "DefonceCube3D",
+      projectDesc: "",
+      footerLink: [
+        {
+          name: "Github",
+          url: "https://github.com/Steelataure/DefonceCubes3D"
+        }
+      ]
+    },
+    {
       image: require("./assets/images/cooktail.png"),
       projectName: "Cooktail",
       projectDesc: "Site de création et partage de cocktails",
@@ -156,17 +167,7 @@ const bigProjects = {
         }
       ]
     },
-    {
-      image: require("./assets/images/defoncecube.gif"),
-      projectName: "DefonceCube3D",
-      projectDesc: "",
-      footerLink: [
-        {
-          name: "Github",
-          url: "https://github.com/Steelataure/DefonceCubes3D"
-        }
-      ]
-    },
+
     {
       image: require("./assets/images/Targus.png"),
       projectName: "Jauge Covid",
@@ -201,6 +202,28 @@ const bigProjects = {
       image: require("./assets/images/habilitation.png"),
       projectName: "Gestion des habilitations",
       projectDesc: ""
+    },
+    {
+      image: require("./assets/images/calcul.png"),
+      projectName: "Générateur de calcul mental",
+      projectDesc: "",
+      footerLink: [
+        {
+          name: "Github",
+          url: "https://github.com/Steelataure/Mental-Arithmetic-Generator"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/Trailer downloader.png"),
+      projectName: "Trailer Downloader",
+      projectDesc: "",
+      footerLink: [
+        {
+          name: "Github",
+          url: "https://github.com/Steelataure/https://github.com/Steelataure/Trailer-downloader"
+        }
+      ]
     }
   ],
   display: true // Set false to hide this section, defaults to true
