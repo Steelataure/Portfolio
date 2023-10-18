@@ -1,7 +1,6 @@
 /* Change this file to get your personal Portfolio */
 
 // To change portfolio colors globally go to the  _globalColor.scss file
-import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 
 // Splash Screen
@@ -21,11 +20,8 @@ const illustration = {
 const greeting = {
   username: "Alexandre Buisset",
   title: "Alexandre Buisset",
-  subTitle: emoji(
-    "Etudiant ingénieur passionné par la programmation et les nouvelles technologies, curieux, avec une solide expérience en développement informatique"
-  ),
-  resumeLink:
-    "https://drive.google.com/file/d/14K7imp7aCZmEOYvRKz_PYOLHOnvDpg2K/view?usp=drive_link", // Set to empty to hide the button
+  subTitle: "Etudiant ingénieur passionné par la programmation et les nouvelles technologies, curieux, avec une solide expérience en développement informatique",
+  resumeLink:"https://drive.google.com/file/d/14K7imp7aCZmEOYvRKz_PYOLHOnvDpg2K/view?usp=drive_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -39,6 +35,77 @@ const socialMediaLinks = {
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
 };
+
+
+// Skills Section
+
+const skillsSection = {
+  title: "",
+  subTitle: "",
+  skills: [
+  ],
+
+  /* Make Sure to include correct Font Awesome Classname to view your icon
+https://fontawesome.com/icons?d=gallery */
+
+  softwareSkills: [
+    {
+      skillName: "html-5",
+      fontAwesomeClassname: "fab fa-html5"
+    },
+    {
+      skillName: "css3",
+      fontAwesomeClassname: "fab fa-css3-alt"
+    },
+    {
+      skillName: "sass",
+      fontAwesomeClassname: "fab fa-sass"
+    },
+    {
+      skillName: "JavaScript",
+      fontAwesomeClassname: "fab fa-js"
+    },
+    {
+      skillName: "reactjs",
+      fontAwesomeClassname: "fab fa-react"
+    },
+    {
+      skillName: "nodejs",
+      fontAwesomeClassname: "fab fa-node"
+    },
+    {
+      skillName: "swift",
+      fontAwesomeClassname: "fab fa-swift"
+    },
+    {
+      skillName: "npm",
+      fontAwesomeClassname: "fab fa-npm"
+    },
+    {
+      skillName: "sql-database",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "aws",
+      fontAwesomeClassname: "fab fa-aws"
+    },
+    {
+      skillName: "firebase",
+      fontAwesomeClassname: "fas fa-fire"
+    },
+    {
+      skillName: "python",
+      fontAwesomeClassname: "fab fa-python"
+    },
+    {
+      skillName: "docker",
+      fontAwesomeClassname: "fab fa-docker"
+    }
+  ],
+  display: false // Set false to hide this section, defaults to true
+};
+
+// Education Section
 
 // Education Section
 
@@ -70,6 +137,14 @@ const educationInfo = {
       descBullets: ["Obtenu"]
     }
   ]
+};
+// Your top 3 proficient stacks/tech experience
+
+const techStack = {
+  viewSkillBars: false, //Set it to true to show Proficiency Section
+  experience: [
+  ],
+  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
 // Work experience section
@@ -120,7 +195,7 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
+  showGithubProfile: "false", // Set true or false to show Contact profile using Github, defaults to true
   display: false // Set false to hide this section, defaults to true
 };
 
@@ -228,21 +303,20 @@ const bigProjects = {
   ],
   display: true // Set false to hide this section, defaults to true
 };
-
 // Achievement Section
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications "),
+  title: "",
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "",
       subtitle: "",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+      image: "",
+      imageAlt: "",
       footerLink: [
         {
           name: "Certification",
@@ -253,26 +327,72 @@ const achievementSection = {
   ],
   display: false // Set false to hide this section, defaults to true
 };
+// Blogs Section
+
+const blogSection = {};
+
+// Talks Sections
+
+const talkSection = {
+  title: "",
+  subtitle:"",
+
+  talks: [
+    {
+      title: "",
+      subtitle: "",
+      slides_url: "",
+      event_url: ""
+    }
+  ],
+  display: false // Set false to hide this section, defaults to true
+};
+
+// Podcast Section
+
+const podcastSection = {
+  title: "",
+  subtitle: "",
+
+  // Please Provide with Your Podcast embeded Link
+  podcast: [
+  ],
+  display: false // Set false to hide this section, defaults to true
+};
+
 
 const contactInfo = {
-  title: "Me contacter", //emoji("Contact Me")
+  title: "Me contacter",
   subtitle: "",
   number: "+33640815099",
   email_address: "alexandre0312@orange.fr"
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+// Twitter Section
+
+const twitterDetails = {
+  userName: "twitter", //Replace "twitter" with your twitter username without @
+  display: false // Set true to display this section, defaults to false
+};
+
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
   greeting,
   socialMediaLinks,
   splashScreen,
+  skillsSection,
   educationInfo,
+  techStack,
   workExperiences,
   openSource,
   bigProjects,
   achievementSection,
+  blogSection,
+  talkSection,
+  podcastSection,
   contactInfo,
+  twitterDetails,
   isHireable
 };

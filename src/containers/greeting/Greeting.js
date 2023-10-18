@@ -1,6 +1,5 @@
 import React, {useContext} from "react";
 import {Fade} from "react-reveal";
-import emoji from "react-easy-emoji";
 import "./Greeting.scss";
 import landingPerson from "../../assets/lottie/landingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
@@ -25,7 +24,8 @@ export default function Greeting() {
                 className={isDark ? "dark-mode greeting-text" : "greeting-text"}
               >
                 {" "}
-                {greeting.title} <span className="wave-emoji">{emoji("")}</span>
+                {greeting.title}{" "}
+                <span className="wave-emoji"></span>
               </h1>
               <p
                 className={
@@ -41,7 +41,7 @@ export default function Greeting() {
                 <Button text="Me contacter" href="#contact" />
                 {greeting.resumeLink && (
                   <Button
-                    text="MON CV"
+                    text="Mon CV"
                     newTab={true}
                     href={greeting.resumeLink}
                   />
