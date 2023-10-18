@@ -130,7 +130,7 @@ const educationInfo = {
     },
     {
       schoolName: "Fénelon Sup",
-      logo: require("./assets/images/fenelon.jpg"),
+      logo: require("./assets/images/fenelon.png"),
       subHeader: "BTS Systèmes Numériques",
       duration: "2020 - 2022",
       desc: "Option Informatique et Réseaux",
