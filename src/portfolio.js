@@ -51,9 +51,7 @@ const educationInfo = {
       subHeader: "Cycle ingénieur",
       duration: "2023 - 2016",
       desc: "Software Engineering",
-      descBullets: [
-      "En cours"
-      ]
+      descBullets: ["En cours"]
     },
     {
       schoolName: "EFREI",
@@ -79,7 +77,6 @@ const educationInfo = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
-
     // {
     //   role: "Développeur",
     //   company: "BNP Paribas",
@@ -99,7 +96,7 @@ const workExperiences = {
         "Administration de bases de données et la gestion des tables",
         "Création d'une application de gestion des habilitations",
         "Création de scripts Bash pour l'automatisation de tâches système",
-        "Élaboration de documentation technique",
+        "Élaboration de documentation technique"
       ]
     },
     {
@@ -113,9 +110,9 @@ const workExperiences = {
         "Mobile Learning : Création de micro-modules et campagnes de quiz",
         "Immersive Learning : Conception de modules en réalité augmentée et réalité virtuelle",
         "Mise en conformité avec la charte Orange pour aligner les normes de l'entreprise",
-        "Déploiement de formations sur Orange Learning",
+        "Déploiement de formations sur Orange Learning"
       ]
-    },
+    }
   ]
 };
 
@@ -141,7 +138,7 @@ const bigProjects = {
         {
           name: "Github",
           url: "https://github.com/Steelataure/GameOfSteel"
-        },
+        }
       ]
     },
     {
@@ -203,10 +200,8 @@ const bigProjects = {
     {
       image: require("./assets/images/habilitation.png"),
       projectName: "Gestion des habilitations",
-      projectDesc: "",
-
-    },
-    
+      projectDesc: ""
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -222,32 +217,26 @@ const achievementSection = {
   achievementsCards: [
     {
       title: "Google Code-In Finalist",
-      subtitle:
-        "",
+      subtitle: "",
       image: require("./assets/images/codeInLogo.webp"),
       imageAlt: "Google Code-In Logo",
       footerLink: [
         {
           name: "Certification",
           url: ""
-        },
-
+        }
       ]
     }
   ],
   display: false // Set false to hide this section, defaults to true
 };
 
-
-
 const contactInfo = {
-  title: "Me contacter",//emoji("Contact Me")
-  subtitle:
-    "",
+  title: "Me contacter", //emoji("Contact Me")
+  subtitle: "",
   number: "+33640815099",
   email_address: "alexandre0312@orange.fr"
 };
-
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 

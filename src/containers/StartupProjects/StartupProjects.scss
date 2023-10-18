@@ -6,7 +6,6 @@
 
   width: 100% !important;
   border-radius: 10px;
-
 }
 
 .card-subtitle {
@@ -30,7 +29,7 @@
   transition: all 0.3s ease;
 }
 
-  //LIGHT
+//LIGHT
 .project-card-dark {
   box-shadow: 10px 10px 15px -15px $darkBoxShadow;
   -webkit-transition: all 0.3s ease;
@@ -62,7 +61,6 @@
   gap: 1rem 1rem;
 }
 
-
 .project-card-footer span.project-tag {
   background: $buttonColor;
   color: $lightBackground3;
@@ -83,7 +81,10 @@
 
 @media (max-width: 768px) {
   .projects-container {
-    grid-template-columns: repeat(1, 1fr); /* Une carte par ligne pour les écrans étroits */
+    grid-template-columns: repeat(
+      1,
+      1fr
+    ); /* Une carte par ligne pour les écrans étroits */
   }
 
   .project-subtitle {

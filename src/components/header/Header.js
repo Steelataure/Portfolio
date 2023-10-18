@@ -1,10 +1,7 @@
 import React from "react";
 import Headroom from "react-headroom";
 import "./Header.scss";
-import {
-  greeting,
-  workExperiences,
-} from "../../portfolio";
+import {greeting, workExperiences} from "../../portfolio";
 
 function Header() {
   const viewExperience = workExperiences.display;
@@ -26,7 +23,7 @@ function Header() {
           <span className={"navicon navicon-dark"}></span>
         </label>
         <ul className={"dark-menu menu"}>
-{/*           
+          {/*           
           {viewSkills && (
             <li>
               <a href="#skills">Compétences</a>
@@ -45,9 +42,7 @@ function Header() {
           <li>
             <a href="#projects">Projets</a>
           </li>
-          <li>
-
-          </li>
+          <li></li>
         </ul>
       </header>
     </Headroom>
