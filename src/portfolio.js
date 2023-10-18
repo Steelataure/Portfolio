@@ -20,8 +20,10 @@ const illustration = {
 const greeting = {
   username: "Alexandre Buisset",
   title: "Alexandre Buisset",
-  subTitle: "Etudiant ingénieur passionné par la programmation et les nouvelles technologies, curieux, avec une solide expérience en développement informatique",
-  resumeLink:"https://drive.google.com/file/d/14K7imp7aCZmEOYvRKz_PYOLHOnvDpg2K/view?usp=drive_link", // Set to empty to hide the button
+  subTitle:
+    "Etudiant ingénieur passionné par la programmation et les nouvelles technologies, curieux, avec une solide expérience en développement informatique",
+  resumeLink:
+    "https://drive.google.com/file/d/14K7imp7aCZmEOYvRKz_PYOLHOnvDpg2K/view?usp=drive_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -36,14 +38,12 @@ const socialMediaLinks = {
   display: true // Set true to display this section, defaults to false
 };
 
-
 // Skills Section
 
 const skillsSection = {
   title: "",
   subTitle: "",
-  skills: [
-  ],
+  skills: [],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
@@ -142,8 +142,7 @@ const educationInfo = {
 
 const techStack = {
   viewSkillBars: false, //Set it to true to show Proficiency Section
-  experience: [
-  ],
+  experience: [],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
@@ -308,8 +307,7 @@ const bigProjects = {
 
 const achievementSection = {
   title: "",
-  subtitle:
-    "",
+  subtitle: "",
 
   achievementsCards: [
     {
@@ -335,7 +333,7 @@ const blogSection = {};
 
 const talkSection = {
   title: "",
-  subtitle:"",
+  subtitle: "",
 
   talks: [
     {
@@ -355,11 +353,9 @@ const podcastSection = {
   subtitle: "",
 
   // Please Provide with Your Podcast embeded Link
-  podcast: [
-  ],
+  podcast: [],
   display: false // Set false to hide this section, defaults to true
 };
-
 
 const contactInfo = {
   title: "Me contacter",
