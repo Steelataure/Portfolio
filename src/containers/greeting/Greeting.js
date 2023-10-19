@@ -26,6 +26,9 @@ export default function Greeting() {
                 {" "}
                 {greeting.title} <span className="wave-emoji"></span>
               </h1>
+                <div className="greeting-research-div">
+                  <h2>{greeting.lookingfor} </h2>
+                </div>
               <p
                 className={
                   isDark

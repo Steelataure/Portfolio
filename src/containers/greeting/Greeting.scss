@@ -13,6 +13,10 @@
   margin-top: 2rem;
 }
 
+.greeting-research-div {
+  color: #bd14cc;
+}
+
 .greeting-main {
   display: flex;
 }
@@ -90,6 +94,10 @@
   .greeting-text-p {
     font-size: 20px;
   }
+
+  .greeting-research-div{
+    font-size: 20px;
+  }
 }
 @media (max-width: 768px) {
   .button-greeting-div {
@@ -109,6 +117,11 @@
   }
   .greeting-image-div {
     height: 256px;
+  }
+  .greeting-research-div{
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
   }
 }
 
