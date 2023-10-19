@@ -20,10 +20,8 @@ const illustration = {
 const greeting = {
   username: "Alexandre Buisset",
   title: "Alexandre Buisset",
-  subTitle:
-    "Etudiant ingénieur passionné par la programmation et les nouvelles technologies, curieux, avec une solide expérience en développement informatique",
-  resumeLink:
-    "https://drive.google.com/file/d/1gbCNCUliS00nePPVXjHUj1PnaeZ4CQMZ/view?usp=share_link", // Set to empty to hide the button
+  subTitle: "Etudiant ingénieur passionné par la programmation et les nouvelles technologies, curieux, avec une solide expérience en développement informatique",
+  resumeLink: "https://drive.google.com/file/d/16Ek8gSYbkxjMfeiIIveFrQM65o4EMNLT/view?usp=share_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -298,7 +296,19 @@ const bigProjects = {
           url: "https://github.com/Steelataure/https://github.com/Steelataure/Trailer-downloader"
         }
       ]
+    },
+    {
+      image: require("./assets/images/IA.gif"),
+      projectName: "Machine Learning",
+      projectDesc: "",
+      footerLink: [
+        {
+          name: "Github",
+          url: "https://github.com/Steelataure/Q-learning"
+        }
+      ]
     }
+    
   ],
   display: true // Set false to hide this section, defaults to true
 };
