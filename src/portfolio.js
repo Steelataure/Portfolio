@@ -205,7 +205,7 @@ const bigProjects = {
   subtitle: "",
   projects: [
     {
-      image: require("./assets/images/game1.gif"),
+      image: require("./assets/images/gamesteel.png"),
       projectName: "Game of Steel",
       projectDesc: "",
       footerLink: [
@@ -216,7 +216,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/defoncecube.gif"),
+      image: require("./assets/images/defonceCubescreen.png"),
       projectName: "DefonceCube3D",
       projectDesc: "",
       footerLink: [
