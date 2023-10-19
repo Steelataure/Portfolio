@@ -23,7 +23,7 @@ const greeting = {
   subTitle:
     "Etudiant ingénieur passionné par la programmation et les nouvelles technologies, curieux, avec une solide expérience en développement informatique",
   resumeLink:
-    "https://drive.google.com/file/d/14K7imp7aCZmEOYvRKz_PYOLHOnvDpg2K/view?usp=drive_link", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1gbCNCUliS00nePPVXjHUj1PnaeZ4CQMZ/view?usp=share_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -201,7 +201,7 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Quelques Projets",
+  title: "Quelques projets",
   subtitle: "",
   projects: [
     {
