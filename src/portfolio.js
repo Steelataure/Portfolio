@@ -14,7 +14,7 @@ const splashScreen = {
 // Summary And Greeting Section
 
 const illustration = {
-  animated: true // Set to false to use static SVG
+  animated: true // Set to remove lottie
 };
 
 const greeting = {
@@ -23,7 +23,7 @@ const greeting = {
   subTitle: "Etudiant ingénieur passionné par la programmation et les nouvelles technologies, curieux, avec une solide expérience en développement informatique",
   lookingfor: "Recherche d'un contrat d'apprentissage de 3 ans",
 
-  resumeLink: "https://drive.google.com/file/d/16Ek8gSYbkxjMfeiIIveFrQM65o4EMNLT/view?usp=share_link", // Set to empty to hide the button
+  resumeLink: "https://drive.google.com/file/d/1vPcNnnME3T07TLyrUUnIr6et5ewG7NDc/view?usp=share_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
