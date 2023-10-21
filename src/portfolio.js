@@ -125,7 +125,7 @@ const educationInfo = {
       logo: require("./assets/images/efrei_paris.jpg"),
       subHeader: "Bachelor Developpement Web & Application",
       duration: "2022 - 2023",
-      desc: "RNCP Concepteur Développeur d'Applications",
+      desc: "Certification Concepteur Développeur d'Applications",
       descBullets: ["Obtenu"]
     },
     {
@@ -157,6 +157,8 @@ const workExperiences = {
     //   companylogo: require("./assets/images/bnp.jpg"),
     //   date: "2023 - Maintenant",
     //   desc: "",
+    //   descBullets: [
+    //   ]
     // },
     {
       role: "Développeur",
