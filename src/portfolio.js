@@ -331,6 +331,7 @@ const bigProjects = {
       ],
       
     },
+  
     {
       image: require("./assets/images/calcul.png"),
       projectName: "Générateur de calcul mental",
@@ -369,6 +370,25 @@ const bigProjects = {
         }
       ]
     },
+    // {
+    //   image: require("./assets/images/steelfiles.png"),
+    //   projectName: "Trie de fichiers",
+    //   projectDesc: "",
+    //   footerdesc: [
+    //     {
+    //       name: "Projet personnel",
+    //     },
+    //     {
+    //       name: "Pyhon",
+    //     }
+    //   ],
+    //   footerLink: [
+    //     {
+    //       name: "Github",
+    //       url: "https://github.com/Steelataure/Files-Management"
+    //     }
+    //   ]
+    // },
     {
       image: require("./assets/images/IA.gif"),
       projectName: "Machine Learning",
@@ -385,6 +405,26 @@ const bigProjects = {
         {
           name: "Github",
           url: "https://github.com/Steelataure/Q-learning"
+        }
+      ]
+    },
+
+    {
+      image: require("./assets/images/flaskapp.png"),
+      projectName: "Site d'actualités",
+      projectDesc: "",
+      footerdesc: [
+        {
+          name: "Projet personnel",
+        },
+        {
+          name: "Python / HTML / CSS / Javascript",
+        }
+      ],
+      footerLink: [
+        {
+          name: "Github",
+          url: "https://github.com/Steelataure/News-FlaskApp"
         }
       ]
     }
