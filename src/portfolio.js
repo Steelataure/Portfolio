@@ -234,7 +234,7 @@ const bigProjects = {
       projectDesc: "",
       footerdesc: [
         {
-          name: "Projet personnel",
+          name: "Projet scolaire",
         },
         {
           name: "Java",
@@ -295,29 +295,30 @@ const bigProjects = {
         }
       ]
     },
-    {
-      image: require("./assets/images/pokedex.PNG"),
-      projectName: "Pokedex",
-      projectDesc: "",
-      footerdesc: [
-        {
-          name: "Projet scolaire",
-        },
-        {
-          name: "PHP / HTML / CSS / Javascript",
-        }
-      ],
-      footerLink: [
-        {
-          name: "Site web",
-          url: "https://b3-dev-pokedex.000webhostapp.com/ "
-        },
-        {
-          name: "Github",
-          url: "https://github.com/Steelataure/Pokedex"
-        }
-      ]
-    },
+
+    // {
+    //   image: require("./assets/images/pokedex.PNG"),
+    //   projectName: "Pokedex",
+    //   projectDesc: "",
+    //   footerdesc: [
+    //     {
+    //       name: "Projet scolaire",
+    //     },
+    //     {
+    //       name: "PHP / HTML / CSS / Javascript",
+    //     }
+    //   ],
+    //   footerLink: [
+    //     {
+    //       name: "Site web",
+    //       url: "https://b3-dev-pokedex.000webhostapp.com/ "
+    //     },
+    //     {
+    //       name: "Github",
+    //       url: "https://github.com/Steelataure/Pokedex"
+    //     }
+    //   ]
+    // },
     {
       image: require("./assets/images/habilitation.png"),
       projectName: "Gestion des habilitations",
@@ -332,7 +333,25 @@ const bigProjects = {
       ],
       
     },
-  
+    {
+      image: require("./assets/images/flaskapp.png"),
+      projectName: "Site d'actualités",
+      projectDesc: "",
+      footerdesc: [
+        {
+          name: "Projet personnel",
+        },
+        {
+          name: "Python / HTML / CSS / Javascript",
+        }
+      ],
+      footerLink: [
+        {
+          name: "Github",
+          url: "https://github.com/Steelataure/News-FlaskApp"
+        }
+      ]
+    },
     {
       image: require("./assets/images/calcul.png"),
       projectName: "Générateur de calcul mental",
@@ -371,25 +390,6 @@ const bigProjects = {
         }
       ]
     },
-    // {
-    //   image: require("./assets/images/steelfiles.png"),
-    //   projectName: "Trie de fichiers",
-    //   projectDesc: "",
-    //   footerdesc: [
-    //     {
-    //       name: "Projet personnel",
-    //     },
-    //     {
-    //       name: "Pyhon",
-    //     }
-    //   ],
-    //   footerLink: [
-    //     {
-    //       name: "Github",
-    //       url: "https://github.com/Steelataure/Files-Management"
-    //     }
-    //   ]
-    // },
     {
       image: require("./assets/images/IA.gif"),
       projectName: "Machine Learning",
@@ -410,25 +410,7 @@ const bigProjects = {
       ]
     },
 
-    // {
-    //   image: require("./assets/images/flaskapp.png"),
-    //   projectName: "Site d'actualités",
-    //   projectDesc: "",
-    //   footerdesc: [
-    //     {
-    //       name: "Projet personnel",
-    //     },
-    //     {
-    //       name: "Python / HTML / CSS / Javascript",
-    //     }
-    //   ],
-    //   footerLink: [
-    //     {
-    //       name: "Github",
-    //       url: "https://github.com/Steelataure/News-FlaskApp"
-    //     }
-    //   ]
-    // }
+
     
   ],
   display: true // Set false to hide this section, defaults to true
