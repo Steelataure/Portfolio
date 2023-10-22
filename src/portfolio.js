@@ -204,6 +204,7 @@ const openSource = {
 
 const bigProjects = {
   title: "Quelques projets",
+  footer: "D'autres disponibles sur mon github",
   subtitle: "",
   projects: [
     {
@@ -360,7 +361,7 @@ const bigProjects = {
           name: "Projet personnel",
         },
         {
-          name: "Pyhon",
+          name: "Python",
         }
       ],
       footerLink: [
@@ -398,7 +399,7 @@ const bigProjects = {
           name: "Projet personnel",
         },
         {
-          name: "Pyhon",
+          name: "Python",
         }
       ],
       footerLink: [
@@ -409,25 +410,25 @@ const bigProjects = {
       ]
     },
 
-    {
-      image: require("./assets/images/flaskapp.png"),
-      projectName: "Site d'actualités",
-      projectDesc: "",
-      footerdesc: [
-        {
-          name: "Projet personnel",
-        },
-        {
-          name: "Python / HTML / CSS / Javascript",
-        }
-      ],
-      footerLink: [
-        {
-          name: "Github",
-          url: "https://github.com/Steelataure/News-FlaskApp"
-        }
-      ]
-    }
+    // {
+    //   image: require("./assets/images/flaskapp.png"),
+    //   projectName: "Site d'actualités",
+    //   projectDesc: "",
+    //   footerdesc: [
+    //     {
+    //       name: "Projet personnel",
+    //     },
+    //     {
+    //       name: "Python / HTML / CSS / Javascript",
+    //     }
+    //   ],
+    //   footerLink: [
+    //     {
+    //       name: "Github",
+    //       url: "https://github.com/Steelataure/News-FlaskApp"
+    //     }
+    //   ]
+    // }
     
   ],
   display: true // Set false to hide this section, defaults to true

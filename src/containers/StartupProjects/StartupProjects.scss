@@ -61,6 +61,13 @@
   gap: 1rem 1rem;
 }
 
+.skills-footer{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 100;
+}
 .project-card-footer span.project-tag{
   background: $buttonColor;
   color: $lightBackground3;
@@ -109,4 +116,5 @@ span.project-tag2 {
     font-size: 16px;
     text-align: center;
   }
+  
 }
