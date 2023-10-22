@@ -65,6 +65,7 @@ export default function StartupProject() {
                     >
                       {project.projectDesc}
                     </p>
+                    
                     {project.footerLink ? (
                       <div className="project-card-footer">
                         {project.footerLink.map((link, i) => {
@@ -77,6 +78,23 @@ export default function StartupProject() {
                               onClick={() => openUrlInNewTab(link.url)}
                             >
                               {link.name}
+                            </span>
+                          );
+                        })}
+                      </div>
+                    ) : null}
+                    
+                  {project.footerdesc ? (
+                      <div className="project-card-footer">
+                        {project.footerdesc.map((name, i) => {
+                          return (
+                            <span
+                              key={i}
+                              className={
+                                isDark ? "dark-mode project-tag2" : "project-tag2"
+                              }
+                              >
+                              {name.name}
                             </span>
                           );
                         })}

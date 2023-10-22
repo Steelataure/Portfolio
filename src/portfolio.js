@@ -210,17 +210,35 @@ const bigProjects = {
       image: require("./assets/images/gamesteel.png"),
       projectName: "Game of Steel",
       projectDesc: "",
+      footerdesc: [
+        {
+          name: "Projet personnel",
+        },
+        {
+          name: "Python",
+        },
+        
+      ],
       footerLink: [
         {
           name: "Github",
           url: "https://github.com/Steelataure/GameOfSteel"
         }
-      ]
+      ],
+
     },
     {
       image: require("./assets/images/defonceCubescreen.png"),
       projectName: "DefonceCube3D",
       projectDesc: "",
+      footerdesc: [
+        {
+          name: "Projet personnel",
+        },
+        {
+          name: "Java",
+        },
+      ],
       footerLink: [
         {
           name: "Github",
@@ -232,6 +250,14 @@ const bigProjects = {
       image: require("./assets/images/cooktail.png"),
       projectName: "Cooktail",
       projectDesc: "Site de création et partage de cocktails",
+      footerdesc: [
+        {
+          name: "Projet scolaire",
+        },
+        {
+          name: "PHP / HTML / CSS / SCSS / Javascript",
+        },
+      ],
       footerLink: [
         {
           name: "Site web",
@@ -248,6 +274,15 @@ const bigProjects = {
       image: require("./assets/images/Targus.png"),
       projectName: "Jauge Covid",
       projectDesc: "",
+      footerdesc: [
+        {
+          name: "Projet scolaire",
+        },
+        {
+          name: "Python / PHP / HTML / CSS / Javascript",
+        }
+        
+      ],
       footerLink: [
         {
           name: "Site web",
@@ -263,6 +298,14 @@ const bigProjects = {
       image: require("./assets/images/pokedex.PNG"),
       projectName: "Pokedex",
       projectDesc: "",
+      footerdesc: [
+        {
+          name: "Projet scolaire",
+        },
+        {
+          name: "PHP / HTML / CSS / Javascript",
+        }
+      ],
       footerLink: [
         {
           name: "Site web",
@@ -277,12 +320,29 @@ const bigProjects = {
     {
       image: require("./assets/images/habilitation.png"),
       projectName: "Gestion des habilitations",
-      projectDesc: ""
+      projectDesc: "",
+      footerdesc: [
+        {
+          name: "Projet professionnel",
+        },
+        {
+          name: "PHP / HTML / CSS / Javascript",
+        }
+      ],
+      
     },
     {
       image: require("./assets/images/calcul.png"),
       projectName: "Générateur de calcul mental",
       projectDesc: "",
+      footerdesc: [
+        {
+          name: "Projet scolaire",
+        },
+        {
+          name: "Python",
+        }
+      ],
       footerLink: [
         {
           name: "Github",
@@ -294,10 +354,18 @@ const bigProjects = {
       image: require("./assets/images/Trailer downloader.png"),
       projectName: "Trailer Downloader",
       projectDesc: "",
+      footerdesc: [
+        {
+          name: "Projet personnel",
+        },
+        {
+          name: "Pyhon",
+        }
+      ],
       footerLink: [
         {
           name: "Github",
-          url: "https://github.com/Steelataure/https://github.com/Steelataure/Trailer-downloader"
+          url: "https://github.com/Steelataure/Trailer-downloader"
         }
       ]
     },
@@ -305,6 +373,14 @@ const bigProjects = {
       image: require("./assets/images/IA.gif"),
       projectName: "Machine Learning",
       projectDesc: "",
+      footerdesc: [
+        {
+          name: "Projet personnel",
+        },
+        {
+          name: "Pyhon",
+        }
+      ],
       footerLink: [
         {
           name: "Github",
