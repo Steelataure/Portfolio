@@ -116,7 +116,7 @@ const educationInfo = {
       schoolName: "ESIEA",
       logo: require("./assets/images/esiea.png"),
       subHeader: "Cycle ingénieur",
-      duration: "2023 - 2016",
+      duration: "2023 - 2026",
       desc: "Software Engineering",
       descBullets: ["En cours"]
     },
