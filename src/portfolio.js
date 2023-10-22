@@ -207,7 +207,7 @@ const bigProjects = {
   subtitle: "",
   projects: [
     {
-      image: require("./assets/images/game1.gif"),
+      image: require("./assets/images/gamesteel.png"),
       projectName: "Game of Steel",
       projectDesc: "",
       footerdesc: [
