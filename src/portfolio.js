@@ -208,6 +208,7 @@ const openSource = {
 
 const bigProjects = {
   title: "Quelques projets",
+  footer: "D'autres disponibles sur mon github",
   subtitle: "",
   projects: [
     {
@@ -237,7 +238,7 @@ const bigProjects = {
       projectDesc: "",
       footerdesc: [
         {
-          name: "Projet personnel",
+          name: "Projet scolaire",
         },
         {
           name: "Java",
@@ -298,29 +299,30 @@ const bigProjects = {
         }
       ]
     },
-    {
-      image: require("./assets/images/pokedex.PNG"),
-      projectName: "Pokedex",
-      projectDesc: "",
-      footerdesc: [
-        {
-          name: "Projet scolaire",
-        },
-        {
-          name: "PHP / HTML / CSS / Javascript",
-        }
-      ],
-      footerLink: [
-        {
-          name: "Site web",
-          url: "https://b3-dev-pokedex.000webhostapp.com/ "
-        },
-        {
-          name: "Github",
-          url: "https://github.com/Steelataure/Pokedex"
-        }
-      ]
-    },
+
+    // {
+    //   image: require("./assets/images/pokedex.PNG"),
+    //   projectName: "Pokedex",
+    //   projectDesc: "",
+    //   footerdesc: [
+    //     {
+    //       name: "Projet scolaire",
+    //     },
+    //     {
+    //       name: "PHP / HTML / CSS / Javascript",
+    //     }
+    //   ],
+    //   footerLink: [
+    //     {
+    //       name: "Site web",
+    //       url: "https://b3-dev-pokedex.000webhostapp.com/ "
+    //     },
+    //     {
+    //       name: "Github",
+    //       url: "https://github.com/Steelataure/Pokedex"
+    //     }
+    //   ]
+    // },
     {
       image: require("./assets/images/habilitation.png"),
       projectName: "Gestion des habilitations",
@@ -334,6 +336,25 @@ const bigProjects = {
         }
       ],
       
+    },
+    {
+      image: require("./assets/images/flaskapp.png"),
+      projectName: "Site d'actualités",
+      projectDesc: "",
+      footerdesc: [
+        {
+          name: "Projet personnel",
+        },
+        {
+          name: "Python / HTML / CSS / Javascript",
+        }
+      ],
+      footerLink: [
+        {
+          name: "Github",
+          url: "https://github.com/Steelataure/News-FlaskApp"
+        }
+      ]
     },
     {
       image: require("./assets/images/calcul.png"),
@@ -363,7 +384,7 @@ const bigProjects = {
           name: "Projet personnel",
         },
         {
-          name: "Pyhon",
+          name: "Python",
         }
       ],
       footerLink: [
@@ -382,7 +403,7 @@ const bigProjects = {
           name: "Projet personnel",
         },
         {
-          name: "Pyhon",
+          name: "Python",
         }
       ],
       footerLink: [
@@ -391,7 +412,9 @@ const bigProjects = {
           url: "https://github.com/Steelataure/Q-learning"
         }
       ]
-    }
+    },
+
+
     
   ],
   display: true // Set false to hide this section, defaults to true

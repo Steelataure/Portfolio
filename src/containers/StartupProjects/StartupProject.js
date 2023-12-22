@@ -105,6 +105,10 @@ export default function StartupProject() {
               );
             })}
           </div>
+          {/* <h1><a  className="skills-footer" href="https://github.com/Steelataure">{bigProjects.footer}</a></h1> */}
+
+          
+
         </div>
       </div>
     </Fade>
