@@ -21,9 +21,8 @@ const greeting = {
   username: "Alexandre Buisset",
   title: "Alexandre Buisset",
   subTitle: "Etudiant ingénieur passionné par la programmation et les nouvelles technologies, curieux, avec une solide expérience en développement informatique",
-  lookingfor: "Recherche d'un contrat d'apprentissage de 3 ans",
-
-  resumeLink: "https://drive.google.com/file/d/1vPcNnnME3T07TLyrUUnIr6et5ewG7NDc/view?usp=share_link", // Set to empty to hide the button
+  lookingfor: "Recherche d'un contrat d'apprentissage de 2 ans",
+  resumeLink: "https://drive.google.com/file/d/1X9-zZraq_5g6Q2Hl4tkxfUVZ73XDdGGS/view?usp=sharing", 
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -151,15 +150,20 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
-    // {
-    //   role: "Développeur",
-    //   company: "BNP Paribas",
-    //   companylogo: require("./assets/images/bnp.jpg"),
-    //   date: "2023 - Maintenant",
-    //   desc: "",
-    //   descBullets: [
-    //   ]
-    // },
+    {
+      role: "Développeur",
+      company: "BNP Paribas Partners For Innovation",
+      companylogo: require("./assets/images/bnp.jpg"),
+      date: "2023 - 2024",
+      desc: "",
+      descBullets: [
+        "Automatisation proactive de la génération de rapports via des scripts Python avancés",
+        "Résolution d'incidents attribués avec des réponses rapides et précises aux demandes des clients",
+        "Génération de rapports détaillés pour fournir des insights approfondis sur la consommation des systèmes Mainframe",
+        "Supervision quotidienne des jobs de la métrologie pour assurer la stabilité et la fiabilité des opérations",
+        "Traitement des demandes d'extraction de données avec l'utilisation de SQL, fournissant des informations détaillées sur la consommation CPU, BATCH, transactionnelle, etc"
+      ]
+    },
     {
       role: "Développeur",
       company: "Harmonie Mutuelle",
@@ -188,7 +192,7 @@ const workExperiences = {
         "Mise en conformité avec la charte Orange pour aligner les normes de l'entreprise",
         "Déploiement de formations sur Orange Learning"
       ]
-    }
+    },
   ]
 };
 
@@ -207,7 +211,7 @@ const bigProjects = {
   subtitle: "",
   projects: [
     {
-      image: require("./assets/images/gamesteel.png"),
+      image: require("./assets/images/game1.gif"),
       projectName: "Game of Steel",
       projectDesc: "",
       footerdesc: [
