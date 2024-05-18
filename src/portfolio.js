@@ -120,7 +120,7 @@ const educationInfo = {
       schoolName: "UQAC",
       logo: require("./assets/images/uqac.png"),
       subHeader: "Computer Science",
-      duration: "Mai 2024 - Juillet 2026",
+      duration: "Mai 2024 - Juillet 2024",
       desc: "",
       descBullets: ["Mobilité internationale"]
     },
