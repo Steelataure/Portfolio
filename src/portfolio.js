@@ -117,6 +117,14 @@ const educationInfo = {
       descBullets: ["En cours"]
     },
     {
+      schoolName: "UQAC",
+      logo: require("./assets/images/uqac.png"),
+      subHeader: "Computer Science",
+      duration: "Mai 2024 - Juillet 2026",
+      desc: "",
+      descBullets: ["Mobilité internationale"]
+    },
+    {
       schoolName: "EFREI",
       logo: require("./assets/images/efrei_paris.jpg"),
       subHeader: "Bachelor Developpement Web & Application",
@@ -263,7 +271,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "Site web",
-          url: "http://cooktail.rf.gd/cocktail/"
+          url: "http://cooktail.free.nf/"
         },
         {
           name: "Github",
