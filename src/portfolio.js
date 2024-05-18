@@ -122,7 +122,7 @@ const educationInfo = {
       subHeader: "Computer Science",
       duration: "Mai 2024 - Juillet 2024",
       desc: "",
-      descBullets: ["Mobilité internationale"]
+      descBullets: ["Mobilité internationale au Canada"]
     },
     {
       schoolName: "EFREI",
