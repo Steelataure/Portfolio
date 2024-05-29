@@ -257,6 +257,63 @@ const bigProjects = {
       ]
     },
     {
+      image: require("./assets/images/botLoL.png"),
+      projectName: "Bot League of Legends",
+      projectDesc: "",
+      footerdesc: [
+        {
+          name: "Projet personnel",
+        },
+        {
+          name: "Python",
+        },
+      ],
+      footerLink: [
+        {
+          name: "Github",
+          url: "https://github.com/Steelataure/Bot-League-of-legends"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/WebRunners.PNG"),
+      projectName: "WebRunners",
+      projectDesc: "",
+      footerdesc: [
+        {
+          name: "Projet personnel",
+        },
+        {
+          name: "PHP / HTML / CSS / SCSS / Javascript",
+        },
+      ],
+      footerLink: [
+        {
+          name: "Site web",
+          url: "http://161.97.68.235/"
+        },
+        {
+          name: "Github",
+          url: "https://github.com/Steelataure/WebRunners"
+        }
+      ]
+    },
+
+    {
+      image: require("./assets/images/habilitation.png"),
+      projectName: "Gestion des habilitations",
+      projectDesc: "",
+      footerdesc: [
+        {
+          name: "Projet professionnel",
+        },
+        {
+          name: "PHP / HTML / CSS / Javascript",
+        }
+      ],
+      
+    },
+    {
       image: require("./assets/images/cooktail.png"),
       projectName: "Cooktail",
       projectDesc: "Site de création et partage de cocktails",
@@ -279,7 +336,28 @@ const bigProjects = {
         }
       ]
     },
+    
 
+    {
+      image: require("./assets/images/pokedex.PNG"),
+      projectName: "Pokedex",
+      projectDesc: "",
+      footerdesc: [
+        {
+          name: "Projet scolaire",
+        },
+        {
+          name: "PHP / HTML / CSS / SCSS / Javascript",
+        },
+      ],
+      footerLink: [
+        {
+          name: "Github",
+          url: "https://github.com/Steelataure/pokedex"
+        }
+      ]
+    },
+    
     {
       image: require("./assets/images/Targus.png"),
       projectName: "Jauge Covid",
@@ -303,44 +381,6 @@ const bigProjects = {
           url: "https://github.com/Steelataure/Jauge-Covid"
         }
       ]
-    },
-
-    // {
-    //   image: require("./assets/images/pokedex.PNG"),
-    //   projectName: "Pokedex",
-    //   projectDesc: "",
-    //   footerdesc: [
-    //     {
-    //       name: "Projet scolaire",
-    //     },
-    //     {
-    //       name: "PHP / HTML / CSS / Javascript",
-    //     }
-    //   ],
-    //   footerLink: [
-    //     {
-    //       name: "Site web",
-    //       url: "https://b3-dev-pokedex.000webhostapp.com/ "
-    //     },
-    //     {
-    //       name: "Github",
-    //       url: "https://github.com/Steelataure/Pokedex"
-    //     }
-    //   ]
-    // },
-    {
-      image: require("./assets/images/habilitation.png"),
-      projectName: "Gestion des habilitations",
-      projectDesc: "",
-      footerdesc: [
-        {
-          name: "Projet professionnel",
-        },
-        {
-          name: "PHP / HTML / CSS / Javascript",
-        }
-      ],
-      
     },
     {
       image: require("./assets/images/flaskapp.png"),
