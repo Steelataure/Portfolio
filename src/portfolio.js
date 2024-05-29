@@ -238,7 +238,7 @@ const bigProjects = {
 
     },
     {
-      image: require("./assets/images/defonceCubescreen.png"),
+      image: require("./assets/images/defonceCubescreen.jpg"),
       projectName: "DefonceCube3D",
       projectDesc: "",
       footerdesc: [
@@ -257,7 +257,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/botLoL.png"),
+      image: require("./assets/images/botLoL.jpg"),
       projectName: "Bot League of Legends",
       projectDesc: "",
       footerdesc: [
@@ -276,7 +276,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/WebRunners.PNG"),
+      image: require("./assets/images/WebRunners.png"),
       projectName: "WebRunners",
       projectDesc: "Vente de sites web personnalisés",
       footerdesc: [
@@ -314,7 +314,7 @@ const bigProjects = {
       
     },
     {
-      image: require("./assets/images/cooktail.png"),
+      image: require("./assets/images/cooktail.jpg"),
       projectName: "Cooktail",
       projectDesc: "Site de création et partage de cocktails",
       footerdesc: [
@@ -339,7 +339,7 @@ const bigProjects = {
     
 
     {
-      image: require("./assets/images/pokedex.PNG"),
+      image: require("./assets/images/pokedex.png"),
       projectName: "Pokedex",
       projectDesc: "",
       footerdesc: [
@@ -383,7 +383,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/flaskapp.png"),
+      image: require("./assets/images/flaskapp.jpg"),
       projectName: "Site d'actualités",
       projectDesc: "",
       footerdesc: [
@@ -401,63 +401,63 @@ const bigProjects = {
         }
       ]
     },
-    {
-      image: require("./assets/images/calcul.png"),
-      projectName: "Générateur de calcul mental",
-      projectDesc: "",
-      footerdesc: [
-        {
-          name: "Projet scolaire",
-        },
-        {
-          name: "Python",
-        }
-      ],
-      footerLink: [
-        {
-          name: "Github",
-          url: "https://github.com/Steelataure/Mental-Arithmetic-Generator"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/Trailer downloader.png"),
-      projectName: "Trailer Downloader",
-      projectDesc: "",
-      footerdesc: [
-        {
-          name: "Projet personnel",
-        },
-        {
-          name: "Python",
-        }
-      ],
-      footerLink: [
-        {
-          name: "Github",
-          url: "https://github.com/Steelataure/Trailer-downloader"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/IA.gif"),
-      projectName: "Machine Learning",
-      projectDesc: "",
-      footerdesc: [
-        {
-          name: "Projet personnel",
-        },
-        {
-          name: "Python",
-        }
-      ],
-      footerLink: [
-        {
-          name: "Github",
-          url: "https://github.com/Steelataure/Q-learning"
-        }
-      ]
-    },
+    // {
+    //   image: require("./assets/images/calcul.png"),
+    //   projectName: "Générateur de calcul mental",
+    //   projectDesc: "",
+    //   footerdesc: [
+    //     {
+    //       name: "Projet scolaire",
+    //     },
+    //     {
+    //       name: "Python",
+    //     }
+    //   ],
+    //   footerLink: [
+    //     {
+    //       name: "Github",
+    //       url: "https://github.com/Steelataure/Mental-Arithmetic-Generator"
+    //     }
+    //   ]
+    // },
+    // {
+    //   image: require("./assets/images/Trailer downloader.png"),
+    //   projectName: "Trailer Downloader",
+    //   projectDesc: "",
+    //   footerdesc: [
+    //     {
+    //       name: "Projet personnel",
+    //     },
+    //     {
+    //       name: "Python",
+    //     }
+    //   ],
+    //   footerLink: [
+    //     {
+    //       name: "Github",
+    //       url: "https://github.com/Steelataure/Trailer-downloader"
+    //     }
+    //   ]
+    // },
+    // {
+    //   image: require("./assets/images/IA.gif"),
+    //   projectName: "Machine Learning",
+    //   projectDesc: "",
+    //   footerdesc: [
+    //     {
+    //       name: "Projet personnel",
+    //     },
+    //     {
+    //       name: "Python",
+    //     }
+    //   ],
+    //   footerLink: [
+    //     {
+    //       name: "Github",
+    //       url: "https://github.com/Steelataure/Q-learning"
+    //     }
+    //   ]
+    // },
 
 
     
