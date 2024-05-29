@@ -278,7 +278,7 @@ const bigProjects = {
     {
       image: require("./assets/images/WebRunners.PNG"),
       projectName: "WebRunners",
-      projectDesc: "",
+      projectDesc: "Vente de sites web personnalisés",
       footerdesc: [
         {
           name: "Projet personnel",
@@ -302,7 +302,7 @@ const bigProjects = {
     {
       image: require("./assets/images/habilitation.png"),
       projectName: "Gestion des habilitations",
-      projectDesc: "",
+      projectDesc: "Administration centralisée des accès utilisateurs sécurisés",
       footerdesc: [
         {
           name: "Projet professionnel",
