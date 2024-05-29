@@ -401,63 +401,63 @@ const bigProjects = {
         }
       ]
     },
-    // {
-    //   image: require("./assets/images/calcul.png"),
-    //   projectName: "Générateur de calcul mental",
-    //   projectDesc: "",
-    //   footerdesc: [
-    //     {
-    //       name: "Projet scolaire",
-    //     },
-    //     {
-    //       name: "Python",
-    //     }
-    //   ],
-    //   footerLink: [
-    //     {
-    //       name: "Github",
-    //       url: "https://github.com/Steelataure/Mental-Arithmetic-Generator"
-    //     }
-    //   ]
-    // },
-    // {
-    //   image: require("./assets/images/Trailer downloader.png"),
-    //   projectName: "Trailer Downloader",
-    //   projectDesc: "",
-    //   footerdesc: [
-    //     {
-    //       name: "Projet personnel",
-    //     },
-    //     {
-    //       name: "Python",
-    //     }
-    //   ],
-    //   footerLink: [
-    //     {
-    //       name: "Github",
-    //       url: "https://github.com/Steelataure/Trailer-downloader"
-    //     }
-    //   ]
-    // },
-    // {
-    //   image: require("./assets/images/IA.gif"),
-    //   projectName: "Machine Learning",
-    //   projectDesc: "",
-    //   footerdesc: [
-    //     {
-    //       name: "Projet personnel",
-    //     },
-    //     {
-    //       name: "Python",
-    //     }
-    //   ],
-    //   footerLink: [
-    //     {
-    //       name: "Github",
-    //       url: "https://github.com/Steelataure/Q-learning"
-    //     }
-    //   ]
-    // },
+    {
+      image: require("./assets/images/calcul.png"),
+      projectName: "Générateur de calcul mental",
+      projectDesc: "",
+      footerdesc: [
+        {
+          name: "Projet scolaire",
+        },
+        {
+          name: "Python",
+        }
+      ],
+      footerLink: [
+        {
+          name: "Github",
+          url: "https://github.com/Steelataure/Mental-Arithmetic-Generator"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/Trailer downloader.png"),
+      projectName: "Trailer Downloader",
+      projectDesc: "",
+      footerdesc: [
+        {
+          name: "Projet personnel",
+        },
+        {
+          name: "Python",
+        }
+      ],
+      footerLink: [
+        {
+          name: "Github",
+          url: "https://github.com/Steelataure/Trailer-downloader"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/IA.gif"),
+      projectName: "Machine Learning",
+      projectDesc: "",
+      footerdesc: [
+        {
+          name: "Projet personnel",
+        },
+        {
+          name: "Python",
+        }
+      ],
+      footerLink: [
+        {
+          name: "Github",
+          url: "https://github.com/Steelataure/Q-learning"
+        }
+      ]
+    },
 
 
     
