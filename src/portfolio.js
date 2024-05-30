@@ -275,30 +275,30 @@ const bigProjects = {
           url: "https://github.com/Steelataure/Bot-League-of-legends"
         }
       ]
-    },
-    {
-      image: require("./assets/images/webrunners.png"),
-      projectName: "WebRunners",
-      projectDesc: "Vente de sites web personnalisés",
-      footerdesc: [
-        {
-          name: "Projet personnel",
-        },
-        {
-          name: "PHP / HTML / CSS / SCSS / Javascript",
-        },
-      ],
-      footerLink: [
-        {
-          name: "Site web",
-          url: "http://161.97.68.235/"
-        },
-        {
-          name: "Github",
-          url: "https://github.com/Steelataure/WebRunners"
-        }
-      ]
-    },
+     },  
+    // {
+    //   image: require("./assets/images/webrunners.png"),
+    //   projectName: "WebRunners",
+    //   projectDesc: "Vente de sites web personnalisés",
+    //   footerdesc: [
+    //     {
+    //       name: "Projet personnel",
+    //     },
+    //     {
+    //       name: "PHP / HTML / CSS / SCSS / Javascript",
+    //     },
+    //   ],
+    //   footerLink: [
+    //     {
+    //       name: "Site web",
+    //       url: "http://161.97.68.235/"
+    //     },
+    //     {
+    //       name: "Github",
+    //       url: "https://github.com/Steelataure/WebRunners"
+    //     }
+    //   ]
+    // },
 
     {
       image: require("./assets/images/habilitation.png"),
