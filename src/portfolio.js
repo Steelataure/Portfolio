@@ -162,12 +162,13 @@ const workExperiences = {
       date: "2023 - 2024",
       desc: "",
       descBullets: [
-        "Automatisation proactive de la génération de rapports via des scripts Python avancés",
-        "Résolution d'incidents attribués avec des réponses rapides et précises aux demandes des clients",
-        "Génération de rapports détaillés pour fournir des insights approfondis sur la consommation des systèmes Mainframe",
-        "Supervision quotidienne des jobs de la métrologie pour assurer la stabilité et la fiabilité des opérations",
-        "Traitement des demandes d'extraction de données avec l'utilisation de SQL, fournissant des informations détaillées sur la consommation CPU, BATCH, transactionnelle, etc"
+        "Automatisation proactive de la génération de rapports via Python et scripts avancés",
+        "Résolution rapide et précise d'incidents clients avec des réponses adaptées",
+        "Génération de rapports détaillés pour fournir des insights sur la consommation des systèmes Mainframe",
+        "Supervision quotidienne des opérations de métrologie pour assurer stabilité et fiabilité",
+        "Traitement des demandes d'extraction de données via SQL pour des informations détaillées"
       ]
+      
     },
     {
       role: "Développeur",
