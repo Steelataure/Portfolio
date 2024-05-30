@@ -277,7 +277,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/WebRunners.png"),
+      image: require("./assets/images/webrunners.png"),
       projectName: "WebRunners",
       projectDesc: "Vente de sites web personnalisés",
       footerdesc: [
