@@ -18,7 +18,7 @@ const greeting = {
   username: "Alexandre Buisset",
   title: "Alexandre Buisset",
   subTitle: "Etudiant ingénieur passionné par la programmation et les nouvelles technologies, curieux, avec une solide expérience en développement informatique",
-  lookingfor: "Recherche d'un contrat d'apprentissage de 2 ans",
+  // lookingfor: "Recherche d'un contrat d'apprentissage de 2 ans",
   resumeLink: "https://drive.google.com/file/d/1X9-zZraq_5g6Q2Hl4tkxfUVZ73XDdGGS/view?usp=sharing", 
   displayGreeting: true // Set false to hide this section, defaults to true
 };
