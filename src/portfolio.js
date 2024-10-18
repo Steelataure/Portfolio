@@ -156,7 +156,24 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Développeur",
+      role: "Ingénieur logiciel",
+      company: "BNP Paribas Corporate & Institutional Banking (CIB)",
+      companylogo: require("./assets/images/bnp.jpg"),
+      date: "2024 - 2025",
+      desc: "",
+      descBullets: [
+        "Création d'applications Java en microservices avec Spring Boot",
+        "Correction et évolution des applications existantes",
+        "Automatisation des builds et des déploiements",
+        "Suivi des tâches via Jira et gestion des incidents",
+        "Gestion et optimisation de grandes bases de données",
+        "Utilisation de Bitbucket pour le code source et la revue",
+        "Participation aux tests unitaires et d'intégration"
+      ]
+      
+    },
+    {
+      role: "Ingénieur logiciel",
       company: "BNP Paribas Partners For Innovation",
       companylogo: require("./assets/images/bnp.jpg"),
       date: "2023 - 2024",
@@ -171,7 +188,7 @@ const workExperiences = {
       
     },
     {
-      role: "Développeur",
+      role: "Ingénieur logiciel",
       company: "Harmonie Mutuelle",
       companylogo: require("./assets/images/HM.jpg"),
       date: "2022 - 2023",
