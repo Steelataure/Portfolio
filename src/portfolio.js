@@ -157,18 +157,17 @@ const workExperiences = {
   experience: [
     {
       role: "Ingénieur logiciel",
-      company: "BNP Paribas Corporate & Institutional Banking (CIB)",
+      company: "BNP Paribas CIB",
       companylogo: require("./assets/images/bnp.jpg"),
-      date: "2024 - 2025",
+      date: "2024 - 2026",
       desc: "",
       descBullets: [
-        "Création d'applications Java en microservices avec Spring Boot",
-        "Correction et évolution des applications existantes",
-        "Automatisation des builds et des déploiements",
-        "Suivi des tâches via Jira et gestion des incidents",
-        "Gestion et optimisation de grandes bases de données",
-        "Utilisation de Bitbucket pour le code source et la revue",
-        "Participation aux tests unitaires et d'intégration"
+        "Correction, optimisation et évolution des applications existantes (migration vers Java 17)",
+        "Automatisation complète et fiabilisation des builds et déploiements",
+        "Suivi rigoureux des tâches avec Jira et gestion proactive des incidents",
+        "Gestion efficace du code source et revue collaborative via Bitbucket",
+        "Contribution active au renforcement de la qualité par des tests unitaires et d'intégration",
+        "Conception et déploiement d’une solution robuste de supervision et monitoring"
       ]
       
     },
@@ -418,64 +417,64 @@ const bigProjects = {
           url: "https://github.com/Steelataure/News-FlaskApp"
         }
       ]
-    },
-    {
-      image: require("./assets/images/calcul.png"),
-      projectName: "Générateur de calcul mental",
-      projectDesc: "",
-      footerdesc: [
-        {
-          name: "Projet scolaire",
-        },
-        {
-          name: "Python",
-        }
-      ],
-      footerLink: [
-        {
-          name: "Github",
-          url: "https://github.com/Steelataure/Mental-Arithmetic-Generator"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/Trailer downloader.png"),
-      projectName: "Trailer Downloader",
-      projectDesc: "",
-      footerdesc: [
-        {
-          name: "Projet personnel",
-        },
-        {
-          name: "Python",
-        }
-      ],
-      footerLink: [
-        {
-          name: "Github",
-          url: "https://github.com/Steelataure/Trailer-downloader"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/IA.gif"),
-      projectName: "Machine Learning",
-      projectDesc: "",
-      footerdesc: [
-        {
-          name: "Projet personnel",
-        },
-        {
-          name: "Python",
-        }
-      ],
-      footerLink: [
-        {
-          name: "Github",
-          url: "https://github.com/Steelataure/Q-learning"
-        }
-      ]
-    },
+     },
+    // {
+    //   image: require("./assets/images/calcul.png"),
+    //   projectName: "Générateur de calcul mental",
+    //   projectDesc: "",
+    //   footerdesc: [
+    //     {
+    //       name: "Projet scolaire",
+    //     },
+    //     {
+    //       name: "Python",
+    //     }
+    //   ],
+    //   footerLink: [
+    //     {
+    //       name: "Github",
+    //       url: "https://github.com/Steelataure/Mental-Arithmetic-Generator"
+    //     }
+    //   ]
+    // },
+    // {
+    //   image: require("./assets/images/Trailer downloader.png"),
+    //   projectName: "Trailer Downloader",
+    //   projectDesc: "",
+    //   footerdesc: [
+    //     {
+    //       name: "Projet personnel",
+    //     },
+    //     {
+    //       name: "Python",
+    //     }
+    //   ],
+    //   footerLink: [
+    //     {
+    //       name: "Github",
+    //       url: "https://github.com/Steelataure/Trailer-downloader"
+    //     }
+    //   ]
+    // },
+    // {
+    //   image: require("./assets/images/IA.gif"),
+    //   projectName: "Machine Learning",
+    //   projectDesc: "",
+    //   footerdesc: [
+    //     {
+    //       name: "Projet personnel",
+    //     },
+    //     {
+    //       name: "Python",
+    //     }
+    //   ],
+    //   footerLink: [
+    //     {
+    //       name: "Github",
+    //       url: "https://github.com/Steelataure/Q-learning"
+    //     }
+    //   ]
+    // },
 
 
     
