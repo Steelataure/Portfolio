@@ -1,0 +1,18 @@
+@import "../../_globalColor";
+
+.progress-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: transparent;
+    z-index: 1000;
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(to right, $buttonColor, #bd14cc);
+    box-shadow: 0 0 10px rgba(189, 20, 204, 0.5);
+    transition: width 0.1s ease-out;
+}

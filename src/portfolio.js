@@ -3,9 +3,9 @@ import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your
 // Splash Screen
 
 const splashScreen = {
-  enabled: false, // set false to disable splash screen
+  enabled: true, // set false to disable splash screen
   animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+  duration: 1000 // Set animation duration as per your animation
 };
 
 // Summary And Greeting Section
@@ -143,7 +143,7 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Ingénieur logiciel (Alternant)",
+      role: "Ingénieur logiciel",
       company: "BNP Paribas CIB",
       companylogo: require("./assets/images/bnp.jpg"),
       date: "2024 - Présent",
@@ -158,7 +158,7 @@ const workExperiences = {
       techStack: ["Java 17", "Spring Boot", "Microservices", "Jenkins", "Grafana", "Prometheus", "Bitbucket"]
     },
     {
-      role: "Ingénieur logiciel (Alternant)",
+      role: "Ingénieur logiciel",
       company: "BNP Paribas Partners For Innovation",
       companylogo: require("./assets/images/bnp.jpg"),
       date: "2023 - 2024",
@@ -172,7 +172,7 @@ const workExperiences = {
       techStack: ["Python", "SQL", "Shell/Bash", "Mainframe", "Data Analysis"]
     },
     {
-      role: "Ingénieur logiciel (Alternant)",
+      role: "Ingénieur logiciel",
       company: "Harmonie Mutuelle",
       companylogo: require("./assets/images/HM.jpg"),
       date: "2022 - 2023",
@@ -186,7 +186,7 @@ const workExperiences = {
       techStack: ["PHP", "Laminas/Zend", "JavaScript", "Linux", "SQL", "Bash"]
     },
     {
-      role: "Développeur E-Learning (Alternant)",
+      role: "Développeur E-Learning",
       company: "Orange",
       companylogo: require("./assets/images/orange.png"),
       date: "2020 - 2022",
@@ -220,7 +220,7 @@ const bigProjects = {
     {
       image: require("./assets/images/gamesteel.png"),
       projectName: "Game of Steel",
-      projectDesc: "",
+      projectDesc: "Un jeu d'aventure tactique développé en Python, mettant en avant des mécaniques de combat et d'exploration.",
       footerdesc: [
         {
           name: "Projet personnel",
@@ -241,7 +241,7 @@ const bigProjects = {
     {
       image: require("./assets/images/defonceCubescreen.jpg"),
       projectName: "DefonceCube3D",
-      projectDesc: "",
+      projectDesc: "Un jeu de destruction de cubes en 3D réalisé avec Java et JavaFX, explorant les graphismes tridimensionnels.",
       footerdesc: [
         {
           name: "Projet scolaire",
@@ -260,7 +260,7 @@ const bigProjects = {
     {
       image: require("./assets/images/botLoL.jpg"),
       projectName: "Bot League of Legends",
-      projectDesc: "",
+      projectDesc: "Automatisation de tâches répétitives pour le jeu League of Legends via des scripts Python et de la reconnaissance d'image.",
       footerdesc: [
         {
           name: "Projet personnel",
@@ -342,7 +342,7 @@ const bigProjects = {
     {
       image: require("./assets/images/pokedex.jpg"),
       projectName: "Pokedex",
-      projectDesc: "",
+      projectDesc: "Application web interactive permettant de consulter les caractéristiques des Pokémon via une API externe.",
       footerdesc: [
         {
           name: "Projet scolaire",
@@ -362,7 +362,7 @@ const bigProjects = {
     {
       image: require("./assets/images/Targus.png"),
       projectName: "Jauge Covid",
-      projectDesc: "",
+      projectDesc: "Outil de gestion d'affluence en temps réel pour assurer le respect des jauges sanitaires durant la pandémie.",
       footerdesc: [
         {
           name: "Projet scolaire",
@@ -386,7 +386,7 @@ const bigProjects = {
     {
       image: require("./assets/images/flaskapp.jpg"),
       projectName: "Site d'actualités",
-      projectDesc: "",
+      projectDesc: "Agrégateur de nouvelles développé avec Flask, permettant une consultation fluide des derniers titres mondiaux.",
       footerdesc: [
         {
           name: "Projet personnel",
