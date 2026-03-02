@@ -5,21 +5,20 @@
 }
 
 .experience-heading {
-  font-size: 56px;
-  font-weight: 400;
+  font-size: 42px; // Reduced from 56px
+  font-weight: 700;
 }
 
 .experience-container {
   display: flex;
   width: 94%;
-  padding: 20px 10px;
+  padding: 10px 10px; // Reduced from 20px
   margin: 0px auto;
-  margin-top: 2rem;
+  margin-top: 1.5rem; // Reduced from 2rem
   font-size: 14px;
-
 }
 
-.experience-container > * {
+.experience-container>* {
   flex: 1;
 }
 

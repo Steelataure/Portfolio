@@ -17,7 +17,7 @@ const illustration = {
 const greeting = {
   username: "Alexandre Buisset",
   title: "Alexandre Buisset",
-  subTitle: "Etudiant ingénieur passionné par la programmation et les nouvelles technologies, curieux, avec une solide expérience en développement informatique",
+  subTitle: "Ingénieur Logiciel & DevOps passionné par l'industrialisation, l'architecture distribuée et la haute disponibilité des systèmes critiques.",
   // lookingfor: "Recherche d'un contrat d'apprentissage de 2 ans",
   resumeLink: "https://drive.google.com/file/d/1X9-zZraq_5g6Q2Hl4tkxfUVZ73XDdGGS/view?usp=sharing",
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -99,25 +99,25 @@ const educationInfo = {
     {
       schoolName: "ESIEA",
       logo: require("./assets/images/esiea.png"),
-      subHeader: "Cycle ingénieur",
+      subHeader: "Ingénieur en Informatique",
       duration: "2023 - 2026",
-      desc: "Génie Logiciel",
+      desc: "Majeure Génie Logiciel & Systèmes d'Information",
       descBullets: ["En cours"]
     },
     {
       schoolName: "UQAC",
       logo: require("./assets/images/uqac.png"),
-      subHeader: "Informatique",
+      subHeader: "Mobilité Internationale",
       duration: "Mai 2024 - Juillet 2024",
-      desc: "",
-      descBullets: ["Mobilité internationale au Canada"]
+      desc: "Chicoutimi, Canada",
+      descBullets: ["Échange universitaire au Canada"]
     },
     {
       schoolName: "EFREI",
       logo: require("./assets/images/efrei_paris.jpg"),
-      subHeader: "Bachelor Developpement Web & Application",
+      subHeader: "Bachelor Conception et Développement logiciel",
       duration: "2022 - 2023",
-      desc: "Certification Concepteur Développeur d'Applications",
+      desc: "Concepteur Développeur d'Applications (RNCP 6)",
       descBullets: ["Obtenu"]
     },
     {
@@ -147,7 +147,7 @@ const workExperiences = {
       role: "Ingénieur logiciel",
       company: "BNP Paribas CIB",
       companylogo: require("./assets/images/bnp.jpg"),
-      date: "2024 - Présent",
+      date: "2024 - 2026",
       desc: "Industrialisation et maintenance d'applications Java critiques au sein de l'environnement Corporate & Institutional Banking.",
       descBullets: [
         "Modernisation de l'architecture logicielle : migration d'applications vers Java 17 et Spring Boot 3.",
