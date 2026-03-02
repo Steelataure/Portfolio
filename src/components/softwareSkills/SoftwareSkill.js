@@ -15,11 +15,11 @@ export default function SoftwareSkill() {
                   return (
                     <li
                       key={i}
-                      className="software-skill-inline"
+                      className="software-skill-inline skill-card"
                       name={skill.skillName}
                     >
                       <i className={skill.fontAwesomeClassname}></i>
-                      <p>{skill.skillName}</p>
+                      <p className="skill-name">{skill.skillName}</p>
                     </li>
                   );
                 })}

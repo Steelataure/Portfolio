@@ -40,9 +40,10 @@ const skillsSection = {
   title: "Expertise Technique",
   subTitle: "Maîtrise du cycle de vie complet du développement logiciel, de l'architecture distribuée à l'orchestration cloud.",
   skills: [
-    "⚡ Architecture Backend : Java 17, Spring Boot, Microservices",
-    "⚡ DevOps & Cloud : AWS, Docker, Jenkins, Grafana, Prometheus",
-    "⚡ Frontend & Data : React, Node.js, PHP, Python (Pandas)"
+    "Conception et déploiement d'architectures logicielles évolutives pour des environnements distribués",
+    "Automatisation complète du cycle de vie des applications via des pipelines CI/CD et orchestration Cloud",
+    "Création d'interfaces utilisateur modernes, réactives et centrées sur l'exploitation des données",
+    "Monitoring proactif, analyse de logs et optimisation continue de la performance et de la fiabilité des systèmes"
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -50,37 +51,37 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      categoryName: "Languages",
+      categoryName: "Langages",
       skills: [
-        { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
-        { skillName: "Java", fontAwesomeClassname: "fab fa-java" },
-        { skillName: "PHP", fontAwesomeClassname: "fab fa-php" },
-        { skillName: "JavaScript", fontAwesomeClassname: "fab fa-js" },
-        { skillName: "Bash", fontAwesomeClassname: "fas fa-terminal" }
+        { skillName: "Python", fontAwesomeClassname: "devicon-python-plain colored" },
+        { skillName: "Java", fontAwesomeClassname: "devicon-java-plain colored" },
+        { skillName: "PHP", fontAwesomeClassname: "devicon-php-plain colored" },
+        { skillName: "JavaScript", fontAwesomeClassname: "devicon-javascript-plain colored" },
+        { skillName: "Bash", fontAwesomeClassname: "devicon-bash-plain colored" }
       ]
     },
     {
-      categoryName: "Frameworks & Libraries",
+      categoryName: "Frameworks & Bibliothèques",
       skills: [
-        { skillName: "Spring Boot", fontAwesomeClassname: "devicon-spring-plain" },
-        { skillName: "Laravel", fontAwesomeClassname: "fab fa-laravel" },
-        { skillName: "Flask", fontAwesomeClassname: "devicon-flask-original" },
-        { skillName: "React", fontAwesomeClassname: "fab fa-react" },
-        { skillName: "Node.js", fontAwesomeClassname: "fab fa-node" },
-        { skillName: "Zend/Laminas", fontAwesomeClassname: "devicon-zend-plain" }
+        { skillName: "Spring Boot", fontAwesomeClassname: "devicon-spring-plain colored" },
+        { skillName: "Laravel", fontAwesomeClassname: "devicon-laravel-plain colored" },
+        { skillName: "Flask", fontAwesomeClassname: "devicon-flask-original colored" },
+        { skillName: "React", fontAwesomeClassname: "devicon-react-original colored" },
+        { skillName: "Node.js", fontAwesomeClassname: "devicon-nodejs-plain colored" },
+        { skillName: "Zend/Laminas", fontAwesomeClassname: "devicon-zend-plain colored" }
       ]
     },
     {
-      categoryName: "Tools & DevOps",
+      categoryName: "Outils & DevOps",
       skills: [
-        { skillName: "Git", fontAwesomeClassname: "fab fa-git-alt" },
-        { skillName: "GitLab", fontAwesomeClassname: "fab fa-gitlab" },
-        { skillName: "Ansible", fontAwesomeClassname: "devicon-ansible-plain" },
-        { skillName: "Docker", fontAwesomeClassname: "fab fa-docker" },
-        { skillName: "Jenkins", fontAwesomeClassname: "fab fa-jenkins" },
-        { skillName: "Prometheus", fontAwesomeClassname: "devicon-prometheus-plain" },
-        { skillName: "Grafana", fontAwesomeClassname: "devicon-grafana-plain" },
-        { skillName: "AWS", fontAwesomeClassname: "fab fa-aws" },
+        { skillName: "Git", fontAwesomeClassname: "devicon-git-plain colored" },
+        { skillName: "GitLab", fontAwesomeClassname: "devicon-gitlab-plain colored" },
+        { skillName: "Ansible", fontAwesomeClassname: "devicon-ansible-plain colored" },
+        { skillName: "Docker", fontAwesomeClassname: "devicon-docker-plain colored" },
+        { skillName: "Jenkins", fontAwesomeClassname: "devicon-jenkins-plain colored" },
+        { skillName: "Prometheus", fontAwesomeClassname: "devicon-prometheus-plain colored" },
+        { skillName: "Grafana", fontAwesomeClassname: "devicon-grafana-plain colored" },
+        { skillName: "AWS", fontAwesomeClassname: "devicon-amazonwebservices-plain-wordmark colored" },
         { skillName: "SQL", fontAwesomeClassname: "fas fa-database" }
       ]
     }
@@ -100,13 +101,13 @@ const educationInfo = {
       logo: require("./assets/images/esiea.png"),
       subHeader: "Cycle ingénieur",
       duration: "2023 - 2026",
-      desc: "Software Engineering",
+      desc: "Génie Logiciel",
       descBullets: ["En cours"]
     },
     {
       schoolName: "UQAC",
       logo: require("./assets/images/uqac.png"),
-      subHeader: "Computer Science",
+      subHeader: "Informatique",
       duration: "Mai 2024 - Juillet 2024",
       desc: "",
       descBullets: ["Mobilité internationale au Canada"]
@@ -206,7 +207,7 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  showGithubProfile: "false", // Set true or false to show Contact profile using Github, defaults to true
+  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
   display: false // Set false to hide this section, defaults to true
 };
 

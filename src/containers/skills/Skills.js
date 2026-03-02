@@ -25,6 +25,22 @@ export default function Skills() {
                 src={require("../../assets/images/developerActivity.svg")}
               ></img>
             )}
+            <div className="skills-bullet-points">
+              {skillsSection.skills.map((skills, i) => {
+                return (
+                  <p
+                    key={i}
+                    className={
+                      isDark
+                        ? "dark-mode subTitle skills-text"
+                        : "subTitle skills-text"
+                    }
+                  >
+                    {skills}
+                  </p>
+                );
+              })}
+            </div>
           </div>
         </Fade>
         <Fade right duration={1000}>
@@ -44,22 +60,6 @@ export default function Skills() {
               {skillsSection.subTitle}
             </p>
             <SoftwareSkill />
-            <div>
-              {skillsSection.skills.map((skills, i) => {
-                return (
-                  <p
-                    key={i}
-                    className={
-                      isDark
-                        ? "dark-mode subTitle skills-text"
-                        : "subTitle skills-text"
-                    }
-                  >
-                    {skills}
-                  </p>
-                );
-              })}
-            </div>
           </div>
         </Fade>
       </div>

@@ -1,48 +1,136 @@
 @import "../../_globalColor";
 
-.dev-icons {
-  padding-left: 0;
-  list-style: none;
-  font-size: 2rem;
-  /* Reduced from 3rem */
-  margin-bottom: 0px;
-  margin-top: 5px;
-  text-align: left;
+.software-skills-main-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1rem;
 }
 
 .software-skill-category {
-  margin-bottom: 15px;
-  /* Reduced from 30px */
+  flex: 1 1 100%;
 }
 
 .category-title {
   font-size: 18px;
-  /* Reduced from 24px */
-  font-weight: 600;
-  color: $buttonColor;
-  margin-bottom: 5px;
+  font-weight: 700;
+  color: $skillsColor;
+  margin-bottom: 1rem;
   text-align: left;
-}
-
-.software-skill-inline {
+  position: relative;
   display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 20px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background: $skillsColor;
+    border-radius: 2px;
+  }
 }
 
-.software-skill-inline>i {
-  color: $subTitle;
+.dev-icons {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
 }
 
-.software-skill-inline>i:hover {
-  color: $skillsColor;
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  cursor: default;
+
+  i {
+    font-size: 1.8rem;
+    margin-bottom: 4px;
+    transition: transform 0.3s ease;
+  }
+
+  .skill-name {
+    font-size: 10px;
+    font-weight: 600;
+    color: #555;
+    margin: 0;
+    text-align: center;
+    transition: color 0.3s ease;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+    border-color: rgba($skillsColor, 0.3);
+
+    i {
+      transform: scale(1.1);
+    }
+
+    .skill-name {
+      color: $skillsColor;
+    }
+  }
 }
 
-.software-skill-inline>p {
-  color: $subTitle;
-  font-size: 10px;
+.dark-mode {
+  .skill-card {
+    background: #1c2128;
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+    .skill-name {
+      color: #adbac7;
+    }
+
+    &:hover {
+      background: #22272e;
+      border-color: rgba($skillsColor, 0.5);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+
+      .skill-name {
+        color: #fff;
+      }
+    }
+  }
 }
 
-.software-skill-inline>i:hover~p {
-  color: $skillsColor;
+@media (max-width: 768px) {
+  .dev-icons {
+    justify-content: center;
+  }
+
+  .category-title {
+    text-align: center;
+    width: 100%;
+
+    &::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .skill-card {
+    width: 70px;
+    height: 70px;
+
+    i {
+      font-size: 1.5rem;
+    }
+
+    .skill-name {
+      font-size: 9px;
+    }
+  }
 }
