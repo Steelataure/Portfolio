@@ -18,10 +18,8 @@
   align-items: center;
 }
 
-.greeting-research-div {
-  font-size: 18px;
-  color: #bd14cc;
-
+.terminal-social-gap {
+  margin-top: 20px;
 }
 
 .greeting-main {
@@ -43,7 +41,8 @@
 
 .button-greeting-div {
   display: flex;
-  margin-top: 20px;
+  margin-top: 30px;
+  gap: 15px;
 }
 
 .greeting-text {
@@ -129,6 +128,11 @@
     font-size: 16px;
     line-height: normal;
     text-align: center;
+  }
+
+  .terminal-window {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .greeting-main {

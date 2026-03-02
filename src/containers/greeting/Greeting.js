@@ -5,6 +5,7 @@ import landingPerson from "../../assets/lottie/landingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
+import Terminal from "../../components/terminal/Terminal";
 
 import { illustration, translations } from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
@@ -15,6 +16,22 @@ export default function Greeting() {
   const { language } = useLanguage();
   const t = translations[language];
   const greeting = t.greeting;
+
+  const terminalSteps = language === "fr" ? [
+    { type: "command", text: "whoami", delay: 500 },
+    { type: "output", text: "Alexandre Buisset", delay: 800 },
+    { type: "command", text: "expertise --current", delay: 500 },
+    { type: "output", text: "Ingénieur Logiciel & DevOps", delay: 800 },
+    { type: "command", text: "ls /stack", delay: 500 },
+    { type: "output", text: "Java, Spring, DevOps, Cloud...", delay: 2000 }
+  ] : [
+    { type: "command", text: "whoami", delay: 500 },
+    { type: "output", text: "Alexandre Buisset", delay: 800 },
+    { type: "command", text: "expertise --current", delay: 500 },
+    { type: "output", text: "Software & DevOps Engineer", delay: 800 },
+    { type: "command", text: "ls /stack", delay: 500 },
+    { type: "output", text: "Java, Spring, DevOps, Cloud...", delay: 2000 }
+  ];
 
   if (!greeting.displayGreeting) {
     return null;
@@ -34,16 +51,10 @@ export default function Greeting() {
               <div className="greeting-research-div">
                 <h2>{greeting.lookingfor} </h2>
               </div>
-              <p
-                className={
-                  isDark
-                    ? "dark-mode greeting-text-p"
-                    : "greeting-text-p subTitle"
-                }
-              >
-                {greeting.subTitle}
-              </p>
-              <SocialMedia />
+              <Terminal steps={terminalSteps} />
+              <div className="terminal-social-gap">
+                <SocialMedia />
+              </div>
               <div className="button-greeting-div">
                 <Button text={language === "fr" ? "Me contacter" : "Contact Me"} href="#contact" />
                 {greeting.resumeLink && (
