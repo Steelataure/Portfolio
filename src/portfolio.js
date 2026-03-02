@@ -180,7 +180,7 @@ const portfolioFR = {
     subtitle: "",
     projects: [
       {
-        image: require("./assets/images/leaders.png"),
+        image: require("./assets/images/leaders.gif"),
         projectName: "Leaders",
         projectDesc: "Version numérique modernisée du célèbre jeu de stratégie Leaders. Architecture distribuée avec moteur de jeu en Java et interface réactive en TypeScript/React.",
         footerdesc: [{ name: "Projet personnel" }, { name: "Java / TypeScript / React / PostgreSQL / Docker" }],
@@ -407,7 +407,7 @@ const portfolioEN = {
     subtitle: "",
     projects: [
       {
-        image: require("./assets/images/leaders.png"),
+        image: require("./assets/images/leaders.gif"),
         projectName: "Leaders",
         projectDesc: "Modernized digital version of the famous strategy game Leaders. Distributed architecture with a Java game engine and a reactive TypeScript/React interface.",
         footerdesc: [{ name: "Personal Project" }, { name: "Java / TypeScript / React / PostgreSQL / Docker" }],
