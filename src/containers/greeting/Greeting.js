@@ -1,16 +1,21 @@
-import React, {useContext} from "react";
-import {Fade} from "react-reveal";
+import React, { useContext } from "react";
+import { Fade } from "react-reveal";
 import "./Greeting.scss";
 import landingPerson from "../../assets/lottie/landingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 
-import {illustration, greeting} from "../../portfolio";
+import { illustration, translations } from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 export default function Greeting() {
-  const {isDark} = useContext(StyleContext);
+  const { isDark } = useContext(StyleContext);
+  const { language } = useLanguage();
+  const t = translations[language];
+  const greeting = t.greeting;
+
   if (!greeting.displayGreeting) {
     return null;
   }
@@ -26,9 +31,9 @@ export default function Greeting() {
                 {" "}
                 {greeting.title} <span className="wave-emoji"></span>
               </h1>
-                <div className="greeting-research-div">
-                  <h2>{greeting.lookingfor} </h2>
-                </div>
+              <div className="greeting-research-div">
+                <h2>{greeting.lookingfor} </h2>
+              </div>
               <p
                 className={
                   isDark
@@ -40,10 +45,10 @@ export default function Greeting() {
               </p>
               <SocialMedia />
               <div className="button-greeting-div">
-                <Button text="Me contacter" href="#contact" />
+                <Button text={language === "fr" ? "Me contacter" : "Contact Me"} href="#contact" />
                 {greeting.resumeLink && (
                   <Button
-                    text="Mon CV"
+                    text={language === "fr" ? "Mon CV" : "My Resume"}
                     newTab={true}
                     href={greeting.resumeLink}
                   />

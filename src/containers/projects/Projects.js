@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useContext, Suspense, lazy } from "react";
 import "./Project.scss";
 import Button from "../../components/button/Button";
-import { openSource, socialMediaLinks } from "../../portfolio";
+import { socialMediaLinks, translations } from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
+import { useLanguage } from "../../contexts/LanguageContext";
 import Loading from "../../containers/loading/Loading";
 export default function Projects() {
   const GithubRepoCard = lazy(() =>
@@ -11,8 +12,13 @@ export default function Projects() {
   const FailedLoading = () => null;
   const renderLoader = () => <Loading />;
   const [repo, setrepo] = useState([]);
-  // todo: remove useContex because is not supported
   const { isDark } = useContext(StyleContext);
+  const { language } = useLanguage();
+  const t = translations[language];
+  const openSource = {
+    showGithubProfile: "true",
+    display: false
+  };
 
   useEffect(() => {
     const getRepoData = () => {
@@ -45,7 +51,7 @@ export default function Projects() {
     return (
       <Suspense fallback={renderLoader()}>
         <div className="main" id="opensource">
-          <h1 className="project-title">Projets Open Source</h1>
+          <h1 className="project-title">{language === "fr" ? "Projets Open Source" : "Open Source Projects"}</h1>
           <div className="repo-cards-div-main">
             {repo.map((v, i) => {
               if (!v) {
@@ -59,7 +65,7 @@ export default function Projects() {
             })}
           </div>
           <Button
-            text={"Plus de projets"}
+            text={language === "fr" ? "Plus de projets" : "More Projects"}
             className="project-button"
             href={socialMediaLinks.github}
             newTab={true}

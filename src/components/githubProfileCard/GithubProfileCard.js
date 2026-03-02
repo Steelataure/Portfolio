@@ -1,20 +1,25 @@
 import React from "react";
 import "./GithubProfileCard.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import { contactInfo, isHireable } from "../../portfolio";
+import { isHireable, translations } from "../../portfolio";
 import emoji from "react-easy-emoji";
 import { Fade } from "react-reveal";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 export default function GithubProfileCard({ prof }) {
+  const { language } = useLanguage();
+  const t = translations[language];
+  const contactInfo = t.contactInfo;
+
   if (isHireable) {
-    prof.hireable = "Oui";
+    prof.hireable = language === "fr" ? "Oui" : "Yes";
   } else {
-    prof.hireable = "Non";
+    prof.hireable = language === "fr" ? "Non" : "No";
   }
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="contact">
-        <h1 className="prof-title">Me contacter</h1>
+        <h1 className="prof-title">{t.contactInfo.title}</h1>
         <div className="row">
           <div className="main-content-profile">
             <div className="blog-header">
@@ -53,7 +58,7 @@ export default function GithubProfileCard({ prof }) {
             </div>
             <div className="opp-div">
               <span className="desc-prof">
-                Ouvert aux opportunités : {prof.hireable}
+                {language === "fr" ? "Ouvert aux opportunités" : "Open for opportunities"} : {prof.hireable}
               </span>
             </div>
             <SocialMedia />

@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 import "./Skills.scss";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
-import { illustration, skillsSection } from "../../portfolio";
+import { illustration, translations } from "../../portfolio";
+import { useLanguage } from "../../contexts/LanguageContext";
 import { Fade } from "react-reveal";
 import buildAnimation from "../../assets/lottie/build";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
@@ -9,6 +10,10 @@ import StyleContext from "../../contexts/StyleContext";
 
 export default function Skills() {
   const { isDark } = useContext(StyleContext);
+  const { language } = useLanguage();
+  const t = translations[language];
+  const skillsSection = t.skillsSection;
+
   if (!skillsSection.display) {
     return null;
   }

@@ -1,17 +1,23 @@
 import React from "react";
 import Headroom from "react-headroom";
 import "./Header.scss";
-import { greeting, workExperiences, skillsSection } from "../../portfolio";
+import { translations } from "../../portfolio";
+import { useLanguage } from "../../contexts/LanguageContext";
+import StyleContext from "../../contexts/StyleContext";
 
 function Header() {
-  const viewExperience = workExperiences.display;
-  const viewSkills = skillsSection.display;
+  const { language, changeLanguage } = useLanguage();
+  const { isDark } = React.useContext(StyleContext);
+  const t = translations[language];
+
+  const viewExperience = t.workExperiences.display;
+  const viewSkills = t.skillsSection.display;
 
   return (
     <Headroom>
       <header className={"dark-menu header"}>
         <a href="/" className="logo">
-          <span className="logo-name">{greeting.username}</span>
+          <span className="logo-name">{t.greeting.username}</span>
           <span className="grey-color">/&gt;</span>
         </a>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
@@ -25,24 +31,32 @@ function Header() {
         <ul className={"dark-menu menu"}>
           {viewSkills && (
             <li>
-              <a href="#skills">Compétences</a>
+              <a href="#skills">{t.header.skills}</a>
             </li>
           )}
 
           <li>
-            <a href="#education">Formations</a>
+            <a href="#education">{t.header.education}</a>
           </li>
           {viewExperience && (
             <li>
-              <a href="#experience">Expériences</a>
+              <a href="#experience">{t.header.experience}</a>
             </li>
           )}
 
           <li>
-            <a href="#projects">Projets</a>
+            <a href="#projects">{t.header.projects}</a>
           </li>
           <li>
-            <a href="#achievements">Certifications</a>
+            <a href="#achievements">{t.header.achievements}</a>
+          </li>
+          <li>
+            <button
+              className="lang-switcher"
+              onClick={() => changeLanguage(language === "fr" ? "en" : "fr")}
+            >
+              {language === "fr" ? "EN" : "FR"}
+            </button>
           </li>
         </ul>
       </header>

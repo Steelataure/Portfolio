@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import "./StartupProjects.scss";
-import { bigProjects } from "../../portfolio";
+import { translations, socialMediaLinks } from "../../portfolio";
+import { useLanguage } from "../../contexts/LanguageContext";
 //import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
@@ -14,6 +15,10 @@ export default function StartupProject() {
   }
 
   const { isDark } = useContext(StyleContext);
+  const { language } = useLanguage();
+  const t = translations[language];
+  const bigProjects = t.bigProjects;
+
   if (!bigProjects.display) {
     return null;
   }

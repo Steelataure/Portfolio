@@ -1,8 +1,13 @@
 import React from "react";
 import "./SoftwareSkill.scss";
-import { skillsSection } from "../../portfolio";
+import { translations } from "../../portfolio";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 export default function SoftwareSkill() {
+  const { language } = useLanguage();
+  const t = translations[language];
+  const skillsSection = t.skillsSection;
+
   return (
     <div>
       <div className="software-skills-main-div">
