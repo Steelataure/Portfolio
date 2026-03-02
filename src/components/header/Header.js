@@ -52,6 +52,15 @@ function Header() {
           </li>
           <li>
             <button
+              className="search-trigger"
+              onClick={() => window.dispatchEvent(new CustomEvent("toggle-command-palette"))}
+              title="Rechercher (Ctrl+K)"
+            >
+              <i className="fas fa-search"></i>
+            </button>
+          </li>
+          <li>
+            <button
               className="lang-switcher"
               onClick={() => changeLanguage(language === "fr" ? "en" : "fr")}
             >

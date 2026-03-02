@@ -16,6 +16,7 @@ import ScrollToTopButton from "./topbutton/Top";
 import Twitter from "./twitter-embed/twitter";
 import Profile from "./profile/Profile";
 import SplashScreen from "./splashScreen/SplashScreen";
+import CommandPalette from "../components/commandPalette/CommandPalette";
 import { splashScreen } from "../portfolio";
 import { StyleProvider } from "../contexts/StyleContext";
 import { LanguageProvider } from "../contexts/LanguageContext";
@@ -30,15 +31,22 @@ const Main = () => {
 
   useEffect(() => {
     if (splashScreen.enabled) {
+      // Automatic failsafe in case onComplete isn't reached
       const splashTimer = setTimeout(
         () => setIsShowingSplashAnimation(false),
-        splashScreen.duration
+        splashScreen.duration + 2000 // Buffer
       );
       return () => {
         clearTimeout(splashTimer);
       };
+    } else {
+      setIsShowingSplashAnimation(false);
     }
   }, []);
+
+  const handleBootComplete = () => {
+    setIsShowingSplashAnimation(false);
+  };
 
   const changeTheme = () => {
     setIsDark(!isDark);
@@ -48,8 +56,9 @@ const Main = () => {
     <div className={isDark ? "dark-mode" : null}>
       <LanguageProvider>
         <StyleProvider value={{ isDark: isDark, changeTheme: changeTheme }}>
+          <CommandPalette />
           {isShowingSplashAnimation && splashScreen.enabled ? (
-            <SplashScreen />
+            <SplashScreen onComplete={handleBootComplete} />
           ) : (
             <>
               <Header />

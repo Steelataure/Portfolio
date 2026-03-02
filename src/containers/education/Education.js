@@ -17,9 +17,13 @@ export default function Education() {
           <h1 className="education-heading">{t.header.education}</h1>
         </Fade>
         <div className="education-card-container">
+          <div className="education-timeline-line"></div>
           {educationInfo.schools.map((school, index) => (
-            <Fade left duration={1500} delay={index * 200} key={index}>
-              <EducationCard school={school} />
+            <Fade bottom duration={1500} delay={index * 200} key={index}>
+              <div className="education-timeline-item">
+                <div className="education-timeline-node"></div>
+                <EducationCard school={school} />
+              </div>
             </Fade>
           ))}
         </div>

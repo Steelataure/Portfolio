@@ -1,6 +1,7 @@
 import React, { useState, createRef } from "react";
-import "./ExperienceCard.scss";
 import ColorThief from "colorthief";
+import Tilt from "react-parallax-tilt";
+import "./ExperienceCard.scss";
 
 export default function ExperienceCard({ cardInfo, isDark }) {
   const [colorArrays, setColorArrays] = useState([]);
