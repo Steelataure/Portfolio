@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./SoftwareSkill.scss";
 import { translations } from "../../portfolio";
 import { useLanguage } from "../../contexts/LanguageContext";
+import StyleContext from "../../contexts/StyleContext";
 
 export default function SoftwareSkill() {
+  const { isDark } = useContext(StyleContext);
   const { language } = useLanguage();
   const t = translations[language];
   const skillsSection = t.skillsSection;
@@ -20,7 +22,11 @@ export default function SoftwareSkill() {
                   return (
                     <li
                       key={i}
-                      className="software-skill-inline skill-card"
+                      className={
+                        isDark
+                          ? "dark-mode software-skill-inline skill-card"
+                          : "software-skill-inline skill-card"
+                      }
                       name={skill.skillName}
                     >
                       <i className={skill.fontAwesomeClassname}></i>

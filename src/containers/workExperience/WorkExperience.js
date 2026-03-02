@@ -20,20 +20,24 @@ export default function WorkExperience() {
             <div>
               <h1 className="experience-heading">{t.header.experience}</h1>
               <div className="experience-cards-div">
+                <div className="experience-timeline-line"></div>
                 {workExperiences.experience.map((card, i) => {
                   return (
-                    <ExperienceCard
-                      key={i}
-                      isDark={isDark}
-                      cardInfo={{
-                        company: card.company,
-                        desc: card.desc,
-                        date: card.date,
-                        companylogo: card.companylogo,
-                        role: card.role,
-                        descBullets: card.descBullets
-                      }}
-                    />
+                    <div key={i} className="experience-timeline-item">
+                      <div className="experience-timeline-node"></div>
+                      <ExperienceCard
+                        isDark={isDark}
+                        cardInfo={{
+                          company: card.company,
+                          desc: card.desc,
+                          date: card.date,
+                          companylogo: card.companylogo,
+                          role: card.role,
+                          descBullets: card.descBullets,
+                          techStack: card.techStack
+                        }}
+                      />
+                    </div>
                   );
                 })}
               </div>
