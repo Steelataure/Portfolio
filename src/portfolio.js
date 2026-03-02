@@ -215,19 +215,43 @@ const openSource = {
 
 const bigProjects = {
   title: "Quelques projets",
-  footer: "D'autres disponibles sur mon github",
+  footer: "Plein d'autres disponibles sur mon GitHub",
   subtitle: "",
   projects: [
     {
-      image: require("./assets/images/gamesteel.png"),
-      projectName: "Game of Steel",
-      projectDesc: "Un jeu d'aventure tactique développé en Python, mettant en avant des mécaniques de combat et d'exploration.",
+      image: require("./assets/images/leaders.png"),
+      projectName: "Leaders",
+      projectDesc: "Version numérique modernisée du célèbre jeu de stratégie Leaders. Architecture distribuée avec moteur de jeu en Java et interface réactive en TypeScript/React.",
       footerdesc: [
         {
           name: "Projet personnel",
         },
         {
-          name: "Python",
+          name: "Java / TypeScript / React / PostgreSQL / Docker",
+        },
+
+      ],
+      footerLink: [
+        {
+          name: "Site web",
+          url: "https://leaders-frontend-production.up.railway.app/"
+        },
+        {
+          name: "Github",
+          url: "https://github.com/Steelataure/Leaders"
+        }
+      ],
+    },
+    {
+      image: require("./assets/images/gamesteel.png"),
+      projectName: "Game of Steel",
+      projectDesc: "Réalisation d'un jeu de plateforme 2D développé en Python, mettant en avant des mécaniques de combat et d'exploration.",
+      footerdesc: [
+        {
+          name: "Projet personnel",
+        },
+        {
+          name: "Python / HTML",
         },
 
       ],
@@ -240,91 +264,15 @@ const bigProjects = {
 
     },
     {
-      image: require("./assets/images/defonceCubescreen.jpg"),
-      projectName: "DefonceCube3D",
-      projectDesc: "Un jeu de destruction de cubes en 3D réalisé avec Java et JavaFX, explorant les graphismes tridimensionnels.",
-      footerdesc: [
-        {
-          name: "Projet scolaire",
-        },
-        {
-          name: "Java",
-        },
-      ],
-      footerLink: [
-        {
-          name: "Github",
-          url: "https://github.com/Steelataure/DefonceCubes3D"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/botLoL.jpg"),
-      projectName: "Bot League of Legends",
-      projectDesc: "Automatisation de tâches répétitives pour le jeu League of Legends via des scripts Python et de la reconnaissance d'image.",
-      footerdesc: [
-        {
-          name: "Projet personnel",
-        },
-        {
-          name: "Python",
-        },
-      ],
-      footerLink: [
-        {
-          name: "Github",
-          url: "https://github.com/Steelataure/Bot-League-of-legends"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/webrunners.jpg"),
-      projectName: "WebRunners",
-      projectDesc: "Vente de sites web personnalisés",
-      footerdesc: [
-        {
-          name: "Projet personnel",
-        },
-        {
-          name: "PHP / HTML / CSS / SCSS / Javascript",
-        },
-      ],
-      footerLink: [
-        {
-          name: "Site web",
-          url: "http://161.97.68.235/"
-        },
-        {
-          name: "Github",
-          url: "https://github.com/Steelataure/WebRunners"
-        }
-      ]
-    },
-
-    {
-      image: require("./assets/images/habilitation.png"),
-      projectName: "Gestion des habilitations",
-      projectDesc: "Administration centralisée des accès utilisateurs sécurisés",
-      footerdesc: [
-        {
-          name: "Projet professionnel",
-        },
-        {
-          name: "PHP / HTML / CSS / Javascript",
-        }
-      ],
-
-    },
-    {
       image: require("./assets/images/cooktail.jpg"),
       projectName: "Cooktail",
-      projectDesc: "Site de création et partage de cocktails",
+      projectDesc: "Site de création et de partage de cocktails avec gestion de communauté, recettes et conseils de mixologie.",
       footerdesc: [
         {
           name: "Projet scolaire",
         },
         {
-          name: "PHP / HTML / CSS / SCSS / Javascript",
+          name: "PHP / CSS / SCSS / HTML / Javascript",
         },
       ],
       footerLink: [
@@ -341,21 +289,25 @@ const bigProjects = {
 
 
     {
-      image: require("./assets/images/pokedex.jpg"),
-      projectName: "Pokedex",
-      projectDesc: "Application web interactive permettant de consulter les caractéristiques des Pokémon via une API externe.",
+      image: require("./assets/images/webrunners.jpg"),
+      projectName: "WebRunners",
+      projectDesc: "Solutions de présence en ligne sur mesure : conception, développement et vente de sites web personnalisés à haute performance.",
       footerdesc: [
         {
-          name: "Projet scolaire",
+          name: "Projet personnel",
         },
         {
-          name: "PHP / HTML / CSS / SCSS / Javascript",
+          name: "HTML / PHP / SCSS / Javascript",
         },
       ],
       footerLink: [
         {
+          name: "Site web",
+          url: "http://161.97.68.235/"
+        },
+        {
           name: "Github",
-          url: "https://github.com/Steelataure/pokedex"
+          url: "https://github.com/Steelataure/WebRunners"
         }
       ]
     },
@@ -363,13 +315,13 @@ const bigProjects = {
     {
       image: require("./assets/images/Targus.png"),
       projectName: "Jauge Covid",
-      projectDesc: "Outil de gestion d'affluence en temps réel pour assurer le respect des jauges sanitaires durant la pandémie.",
+      projectDesc: "Système de gestion et de visualisation d'affluence en temps réel pour assurer le respect des jauges sanitaires.",
       footerdesc: [
         {
           name: "Projet scolaire",
         },
         {
-          name: "Python / PHP / HTML / CSS / Javascript",
+          name: "PHP / HTML / CSS / JavaScript",
         }
 
       ],
@@ -385,21 +337,21 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/flaskapp.jpg"),
-      projectName: "Site d'actualités",
-      projectDesc: "Agrégateur de nouvelles développé avec Flask, permettant une consultation fluide des derniers titres mondiaux.",
+      image: require("./assets/images/overwatch_stats.png"),
+      projectName: "Overwatch Stats",
+      projectDesc: "Analyse approfondie de données de jeu via Python et Pandas, générant des statistiques et visualisations de performance complexes.",
       footerdesc: [
         {
           name: "Projet personnel",
         },
         {
-          name: "Python / HTML / CSS / Javascript",
+          name: "Python / Pandas / Jupyter Notebook",
         }
       ],
       footerLink: [
         {
           name: "Github",
-          url: "https://github.com/Steelataure/News-FlaskApp"
+          url: "https://github.com/Steelataure/Overwatch_stats"
         }
       ]
     },
