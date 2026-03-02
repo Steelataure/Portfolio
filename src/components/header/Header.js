@@ -1,11 +1,11 @@
 import React from "react";
 import Headroom from "react-headroom";
 import "./Header.scss";
-import {greeting, workExperiences} from "../../portfolio";
+import { greeting, workExperiences, skillsSection } from "../../portfolio";
 
 function Header() {
   const viewExperience = workExperiences.display;
-  //const viewSkills = skillsSection.display;
+  const viewSkills = skillsSection.display;
 
   return (
     <Headroom>
@@ -18,17 +18,16 @@ function Header() {
         <label
           className="menu-icon"
           htmlFor="menu-btn"
-          style={{color: "white"}}
+          style={{ color: "white" }}
         >
           <span className={"navicon navicon-dark"}></span>
         </label>
         <ul className={"dark-menu menu"}>
-          {/*           
           {viewSkills && (
             <li>
               <a href="#skills">Compétences</a>
             </li>
-          )} */}
+          )}
 
           <li>
             <a href="#education">Formations</a>
@@ -42,7 +41,9 @@ function Header() {
           <li>
             <a href="#projects">Projets</a>
           </li>
-          <li></li>
+          <li>
+            <a href="#achievements">Certifications</a>
+          </li>
         </ul>
       </header>
     </Headroom>

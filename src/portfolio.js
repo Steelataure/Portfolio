@@ -37,68 +37,55 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "",
-  subTitle: "",
-  skills: [],
+  title: "Expertise Technique",
+  subTitle: "Maîtrise du cycle de vie complet du développement logiciel, de l'architecture distribuée à l'orchestration cloud.",
+  skills: [
+    "⚡ Architecture Backend : Java 17, Spring Boot, Microservices",
+    "⚡ DevOps & Cloud : AWS, Docker, Jenkins, Grafana, Prometheus",
+    "⚡ Frontend & Data : React, Node.js, PHP, Python (Pandas)"
+  ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      categoryName: "Languages",
+      skills: [
+        { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
+        { skillName: "Java", fontAwesomeClassname: "fab fa-java" },
+        { skillName: "PHP", fontAwesomeClassname: "fab fa-php" },
+        { skillName: "JavaScript", fontAwesomeClassname: "fab fa-js" },
+        { skillName: "Bash", fontAwesomeClassname: "fas fa-terminal" }
+      ]
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      categoryName: "Frameworks & Libraries",
+      skills: [
+        { skillName: "Spring Boot", fontAwesomeClassname: "devicon-spring-plain" },
+        { skillName: "Laravel", fontAwesomeClassname: "fab fa-laravel" },
+        { skillName: "Flask", fontAwesomeClassname: "devicon-flask-original" },
+        { skillName: "React", fontAwesomeClassname: "fab fa-react" },
+        { skillName: "Node.js", fontAwesomeClassname: "fab fa-node" },
+        { skillName: "Zend/Laminas", fontAwesomeClassname: "devicon-zend-plain" }
+      ]
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      categoryName: "Tools & DevOps",
+      skills: [
+        { skillName: "Git", fontAwesomeClassname: "fab fa-git-alt" },
+        { skillName: "GitLab", fontAwesomeClassname: "fab fa-gitlab" },
+        { skillName: "Ansible", fontAwesomeClassname: "devicon-ansible-plain" },
+        { skillName: "Docker", fontAwesomeClassname: "fab fa-docker" },
+        { skillName: "Jenkins", fontAwesomeClassname: "fab fa-jenkins" },
+        { skillName: "Prometheus", fontAwesomeClassname: "devicon-prometheus-plain" },
+        { skillName: "Grafana", fontAwesomeClassname: "devicon-grafana-plain" },
+        { skillName: "AWS", fontAwesomeClassname: "fab fa-aws" },
+        { skillName: "SQL", fontAwesomeClassname: "fas fa-database" }
+      ]
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Education Section
@@ -156,65 +143,62 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Ingénieur logiciel",
+      role: "Ingénieur logiciel (Alternant)",
       company: "BNP Paribas CIB",
       companylogo: require("./assets/images/bnp.jpg"),
-      date: "2024 - 2026",
-      desc: "",
+      date: "2024 - Présent",
+      desc: "Industrialisation et maintenance d'applications Java critiques au sein de l'environnement Corporate & Institutional Banking.",
       descBullets: [
-        "Correction, optimisation et évolution des applications existantes (migration vers Java 17)",
-        "Automatisation complète et fiabilisation des builds et déploiements",
-        "Suivi rigoureux des tâches avec Jira et gestion proactive des incidents",
-        "Gestion efficace du code source et revue collaborative via Bitbucket",
-        "Contribution active au renforcement de la qualité par des tests unitaires et d'intégration",
-        "Conception et déploiement d’une solution robuste de supervision et monitoring"
-      ]
-
+        "Modernisation de l'architecture logicielle : migration d'applications vers Java 17 et Spring Boot 3.",
+        "Automatisation DevOps : mise en place de pipelines CI/CD robustes avec Jenkins et Bitbucket pour fiabiliser les déploiements.",
+        "Observabilité & Monitoring : conception et déploiement de solutions de supervision avec Grafana et Prometheus pour garantir la haute disponibilité.",
+        "Qualité Logicielle : renforcement de la couverture de tests (unitaires/intégration) et revue de code collaborative.",
+        "Gestion Agile : pilotage des évolutions techniques via Jira en coordination avec les équipes métiers."
+      ],
+      techStack: ["Java 17", "Spring Boot", "Microservices", "Jenkins", "Grafana", "Prometheus", "Bitbucket"]
     },
     {
-      role: "Ingénieur logiciel",
+      role: "Ingénieur logiciel (Alternant)",
       company: "BNP Paribas Partners For Innovation",
       companylogo: require("./assets/images/bnp.jpg"),
       date: "2023 - 2024",
-      desc: "",
+      desc: "Amélioration de l'efficacité opérationnelle par l'automatisation et l'analyse de données système.",
       descBullets: [
-        "Automatisation proactive de la génération de rapports via Python et scripts avancés",
-        "Résolution rapide et précise d'incidents clients avec des réponses adaptées",
-        "Génération de rapports détaillés pour fournir des insights sur la consommation des systèmes Mainframe",
-        "Supervision quotidienne des opérations de métrologie pour assurer stabilité et fiabilité",
-        "Traitement des demandes d'extraction de données via SQL pour des informations détaillées"
-      ]
-
+        "Automatisation de rapports complexes : développement de scripts Python pour industrialiser la génération de metrics de performance.",
+        "Analyse de données Mainframe : extraction et traitement de gros volumes de données via SQL pour fournir des insights de consommation.",
+        "Maintenance préventive : supervision des opérations de métrologie quotidienne pour assurer la stabilité des systèmes hybrides.",
+        "Support technique de niveau 2 : résolution d'incidents critiques et optimisation des workflows de données."
+      ],
+      techStack: ["Python", "SQL", "Shell/Bash", "Mainframe", "Data Analysis"]
     },
     {
-      role: "Ingénieur logiciel",
+      role: "Ingénieur logiciel (Alternant)",
       company: "Harmonie Mutuelle",
       companylogo: require("./assets/images/HM.jpg"),
       date: "2022 - 2023",
-      desc: "",
+      desc: "Développement full-stack d'outils internes pour la gestion des habilitations et l'automatisation système.",
       descBullets: [
-        "Développement d'applications web sous le Framework Zend Framework/Laminas",
-        "Déploiement et maintenance d'applications sur des serveurs Linux",
-        "Administration de bases de données et la gestion des tables",
-        "Création d'une application de gestion des habilitations",
-        "Création de scripts Bash pour l'automatisation de tâches système",
-        "Élaboration de documentation technique"
-      ]
+        "Développement Web : création d'une application de gestion des habilitations sous Zend Framework (Laminas).",
+        "Administration Linux : installation, configuration et maintenance préventive de serveurs d'application Linux.",
+        "Automatisation Système : écriture de scripts Bash pour la gestion des tâches planifiées et la fiabilisation des sauvegardes.",
+        "Architecture de données : modélisation et administration de bases de données relationnelles."
+      ],
+      techStack: ["PHP", "Laminas/Zend", "JavaScript", "Linux", "SQL", "Bash"]
     },
     {
-      role: "Développeur de contenu e-learning",
+      role: "Développeur E-Learning (Alternant)",
       company: "Orange",
       companylogo: require("./assets/images/orange.png"),
       date: "2020 - 2022",
-      desc: "",
+      desc: "Conception et déploiement de solutions pédagogiques innovantes utilisant les technologies immersives.",
       descBullets: [
-        "Vidéo : Scénarisation, captation, montage, post-production, mise en ligne sur notre système d'information",
-        "Mobile Learning : Création de micro-modules et campagnes de quiz",
-        "Immersive Learning : Conception de modules en réalité augmentée et réalité virtuelle",
-        "Mise en conformité avec la charte Orange pour aligner les normes de l'entreprise",
-        "Déploiement de formations sur Orange Learning"
-      ]
-    },
+        "Innovation Pédagogique : conception de modules en Réalité Augmentée (AR) et Réality Virtuelle (VR).",
+        "Ingénierie Multimédia : gestion du cycle de vie complet de production vidéo (scénarisation à la post-production).",
+        "Digital Learning : déploiement et administration de formations sur la plateforme Orange Learning.",
+        "Gestion de projet : mise en conformité des contenus avec la charte graphique et accessibilité du groupe Orange."
+      ],
+      techStack: ["VR/AR", "E-Learning", "Suite Adobe", "Production Multimédia"]
+    }
   ]
 };
 
@@ -562,7 +546,7 @@ const podcastSection = {
 
 const contactInfo = {
   title: "Me contacter",
-  subtitle: "",
+  subtitle: "Disponible pour discuter de vos projets techniques ou d'opportunités de collaboration en ingénierie logicielle.",
   number: "+33640815099",
   email_address: "alexandre0312@orange.fr"
 };

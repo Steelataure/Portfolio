@@ -100,9 +100,11 @@
   padding-top: 1.5rem;
   line-height: normal;
 }
+
 .dark-mode-text {
   color: $textColorDark !important;
 }
+
 .experience-text-date {
   text-align: center;
   color: $textColor;
@@ -123,17 +125,44 @@
 
 /* Media Query */
 
+.experience-tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 1.5rem;
+}
+
+.tech-tag {
+  background-color: rgba(85, 25, 139, 0.1);
+  /* $buttonColor with opacity */
+  color: $buttonColor;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid rgba(85, 25, 139, 0.2);
+}
+
+.dark-mode-tech-tag {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: $textColorDark;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 @media (max-width: 1380px) {
   .experience-text-role {
     padding-top: 0.5rem;
     font-size: 22px;
   }
+
   .experience-text-company {
     font-size: 22px;
   }
+
   .experience-text-date {
     font-size: 18px;
   }
+
   .experience-roundedimg {
     width: 6.5rem;
     height: 6.5rem;
@@ -144,12 +173,15 @@
   .experience-text-role {
     font-size: 22px;
   }
+
   .experience-text-company {
     font-size: 22px;
   }
+
   .experience-text-date {
     font-size: 18px;
   }
+
   .experience-text-desc {
     font-size: 16px;
   }

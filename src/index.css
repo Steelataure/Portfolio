@@ -6,28 +6,53 @@
     url("./assets/fonts/Agustina.woff") format("woff");
   font-display: swap;
 }
+
 @font-face {
   font-family: "Montserrat";
   src: local("Montserrat"),
     url("./assets/fonts/Montserrat-Regular.ttf") format("woff");
   font-display: swap;
 }
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
 html,
 body {
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scroll-padding-top: 50px;
+  /* Space for the header */
 }
+
 body {
   margin: 0;
   font: 19px / 23px Montserrat, "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+section,
+.main,
+.greet-main,
+.skills-main-div,
+.experience-container,
+.education-section,
+.projects-container,
+.achievement-main-div,
+.contact-div-main {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  margin-bottom: 50px;
+  /* Small gap between snaps if needed */
+}
+
 /* Media Query */
 @media (max-width: 1380px) {
+
   html,
   body {
     font-size: rem;
