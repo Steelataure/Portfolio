@@ -19,7 +19,7 @@ const greeting = {
   title: "Alexandre Buisset",
   subTitle: "Etudiant ingénieur passionné par la programmation et les nouvelles technologies, curieux, avec une solide expérience en développement informatique",
   // lookingfor: "Recherche d'un contrat d'apprentissage de 2 ans",
-  resumeLink: "https://drive.google.com/file/d/1X9-zZraq_5g6Q2Hl4tkxfUVZ73XDdGGS/view?usp=sharing", 
+  resumeLink: "https://drive.google.com/file/d/1X9-zZraq_5g6Q2Hl4tkxfUVZ73XDdGGS/view?usp=sharing",
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -169,7 +169,7 @@ const workExperiences = {
         "Contribution active au renforcement de la qualité par des tests unitaires et d'intégration",
         "Conception et déploiement d’une solution robuste de supervision et monitoring"
       ]
-      
+
     },
     {
       role: "Ingénieur logiciel",
@@ -184,7 +184,7 @@ const workExperiences = {
         "Supervision quotidienne des opérations de métrologie pour assurer stabilité et fiabilité",
         "Traitement des demandes d'extraction de données via SQL pour des informations détaillées"
       ]
-      
+
     },
     {
       role: "Ingénieur logiciel",
@@ -244,7 +244,7 @@ const bigProjects = {
         {
           name: "Python",
         },
-        
+
       ],
       footerLink: [
         {
@@ -291,7 +291,7 @@ const bigProjects = {
           url: "https://github.com/Steelataure/Bot-League-of-legends"
         }
       ]
-     },  
+    },
     {
       image: require("./assets/images/webrunners.jpg"),
       projectName: "WebRunners",
@@ -328,7 +328,7 @@ const bigProjects = {
           name: "PHP / HTML / CSS / Javascript",
         }
       ],
-      
+
     },
     {
       image: require("./assets/images/cooktail.jpg"),
@@ -353,7 +353,7 @@ const bigProjects = {
         }
       ]
     },
-    
+
 
     {
       image: require("./assets/images/pokedex.jpg"),
@@ -374,7 +374,7 @@ const bigProjects = {
         }
       ]
     },
-    
+
     {
       image: require("./assets/images/Targus.png"),
       projectName: "Jauge Covid",
@@ -386,7 +386,7 @@ const bigProjects = {
         {
           name: "Python / PHP / HTML / CSS / Javascript",
         }
-        
+
       ],
       footerLink: [
         {
@@ -417,7 +417,7 @@ const bigProjects = {
           url: "https://github.com/Steelataure/News-FlaskApp"
         }
       ]
-     },
+    },
     // {
     //   image: require("./assets/images/calcul.png"),
     //   projectName: "Générateur de calcul mental",
@@ -477,7 +477,7 @@ const bigProjects = {
     // },
 
 
-    
+
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -485,24 +485,48 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: "",
-  subtitle: "",
-
+  title: "Certifications",
+  subtitle: "Validation officielle de mes compétences techniques.",
   achievementsCards: [
     {
-      title: "",
-      subtitle: "",
-      image: "",
-      imageAlt: "",
+      title: "AWS Academy: Cloud Foundations",
+      subtitle: "Amazon Web Services",
+      image: require("./assets/images/Cloud Foundations - Training Badge.png"),
+      imageAlt: "AWS Foundations",
+      footerLink: [{ name: "Badge", url: "https://www.credly.com/badges/4eb0a186-2e3a-49b9-af14-b2cd88291fe3/public_url" }]
+    },
+    {
+      title: "AWS Academy: Microservices & CI/CD",
+      subtitle: "Amazon Web Services",
+      image: require("./assets/images/badge aws microservice.png"),
+      imageAlt: "AWS Microservices",
+      footerLink: [{ name: "Badge", url: "https://www.credly.com/badges/2246b65f-b3fe-498d-ad54-573f486bc5e4/public_url" }]
+    },
+    {
+      title: "AWS Cloud Quest: Cloud Practitioner",
+      subtitle: "Amazon Web Services",
+      image: require("./assets/images/Cloud Practitioner.png"),
+      imageAlt: "AWS Cloud Quest",
+      footerLink: [{ name: "Badge", url: "https://www.credly.com/badges/d4732072-60cb-4b16-b5a4-d3b651226965/public_url" }]
+    },
+    {
+      title: "TOEIC Listening and Reading",
+      subtitle: "Score: 850 / 990",
+      image: require("./assets/images/toeic.png"),
+      imageAlt: "ETS Logo",
+      footerLink: [{ name: "Site Officiel", url: "https://www.ets.org/toeic" }]
+    },
+    {
+      title: "Concepteur Développeur d'Applications",
+      subtitle: "Titre RNCP Niveau 6",
+      image: require("./assets/images/efrei_paris.jpg"),
+      imageAlt: "EFREI Logo",
       footerLink: [
-        {
-          name: "Certification",
-          url: ""
-        }
+        { name: "RNCP 31678", url: "https://www.francecompetences.fr/recherche/rncp/31678/" }
       ]
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 // Blogs Section
 
