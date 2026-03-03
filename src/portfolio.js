@@ -180,7 +180,7 @@ const portfolioFR = {
     subtitle: "",
     projects: [
       {
-        image: require("./assets/images/leaders.gif"),
+        image: require("./assets/images/leaders.png"),
         projectName: "Leaders",
         projectDesc: "Version numérique modernisée du célèbre jeu de stratégie Leaders. Architecture distribuée avec moteur de jeu en Java et interface réactive en TypeScript/React.",
         footerdesc: [{ name: "Projet personnel" }, { name: "Java / TypeScript / React / PostgreSQL / Docker" }],

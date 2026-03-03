@@ -43,9 +43,7 @@
 .project-card {
   display: flex;
   flex-direction: column;
-  background: rgba(255, 255, 255, 0.03) !important;
-  backdrop-filter: blur(16px) !important;
-  -webkit-backdrop-filter: blur(16px) !important;
+  background: transparent !important; // Removed background to avoid "black box" look
   border-radius: 20px;
   overflow: hidden;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -70,20 +68,21 @@
     transform: translateY(-12px) scale(1.02);
     border-color: rgba($skillsColor, 0.6) !important;
     box-shadow: 0 15px 45px rgba($skillsColor, 0.3) !important;
-    background: rgba(255, 255, 255, 0.05) !important;
+    background: transparent !important; // Ensure transparency on hover
   }
 }
 
-.project-card-light {}
 
 .project-card-dark {
-  background: rgba(255, 255, 255, 0.02) !important;
+  background: transparent !important;
 }
 
 .project-image {
   position: relative;
+  width: 100%; // Explicit width to stabilize aspect-ratio
+  min-height: 200px; // Prevent collapse while loading or if data missing
   overflow: hidden;
-  aspect-ratio: 16 / 9; // Restored to standard format
+  aspect-ratio: 16 / 9;
   background: transparent; // Clean up background
   display: flex;
   justify-content: center;
@@ -94,7 +93,7 @@
     height: 100% !important;
     max-width: none !important;
     max-height: none !important;
-    object-fit: cover !important;
+    object-fit: contain !important; // Changed to contain to avoid cutting off images/GIFs
     object-position: center;
     transition: transform 0.6s ease;
     border-radius: 0; // The container project-card already has border-radius
@@ -102,7 +101,7 @@
 }
 
 .dark-mode .project-image {
-  background: #1c2128; // Match dark card
+  background: transparent !important; // Removed dark background
 }
 
 .project-card:hover .card-image {

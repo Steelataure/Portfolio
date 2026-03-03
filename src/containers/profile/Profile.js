@@ -26,9 +26,12 @@ export default function Profile() {
             if (result.ok) {
               return result.json();
             }
+            throw new Error("Offline or missing profile.json");
           })
           .then(response => {
-            setProfileFunction(response.data.user);
+            if (response && response.data && response.data.user) {
+              setProfileFunction(response.data.user);
+            }
           })
           .catch(function (error) {
             console.error(

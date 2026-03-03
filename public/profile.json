@@ -1,0 +1,15 @@
+{
+  "data": {
+    "user": {
+      "name": "Alexandre Buisset",
+      "bio": "Engineering Student @ESIEA | Software Engineer @BNP Paribas CIB | Cloud Enthusiast",
+      "avatarUrl": "assets/images/contact_logo.jpg",
+      "location": "Paris, France",
+      "url": "https://github.com/Steelataure",
+      "id": "MDQ6VXNlcjQ5MjU3NjMw",
+      "pinnedItems": {
+        "edges": []
+      }
+    }
+  }
+}
