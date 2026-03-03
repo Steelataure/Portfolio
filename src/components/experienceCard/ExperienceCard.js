@@ -1,6 +1,5 @@
 import React, { useState, createRef } from "react";
 import ColorThief from "colorthief";
-import Tilt from "react-parallax-tilt";
 import "./ExperienceCard.scss";
 
 export default function ExperienceCard({ cardInfo, isDark }) {

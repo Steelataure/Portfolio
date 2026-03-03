@@ -187,35 +187,55 @@
   }
 }
 
-.lang-switcher {
-  background: transparent;
-  border: 1px solid $buttonColor;
-  color: $buttonColor;
-  padding: 5px 12px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: 600;
-  margin-left: 15px;
-  margin-top: 2px;
-  font-size: 0.9em;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: fit-content;
+/* Shared Neon Styles for Buttons */
+.lang-switcher,
+.search-trigger {
+  background-color: transparent !important;
+  background: transparent !important;
+  border: 2px solid $buttonColor !important;
+  color: $buttonColor !important;
+  padding: 8px 15px !important;
+  border-radius: 6px !important;
+  cursor: pointer !important;
+  font-weight: 700 !important;
+  margin-left: 15px !important;
+  font-size: 0.9em !important;
+  transition: all 0.3s ease !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 38px !important;
+  min-width: 45px !important;
+  outline: none !important;
+  text-transform: uppercase !important;
+  box-shadow: 0 0 5px rgba($buttonColor, 0.3) !important;
 
   &:hover {
-    background: $buttonColor;
-    color: white;
+    background-color: $buttonColor !important;
+    color: white !important;
+    box-shadow: 0 0 20px $buttonColor !important;
+    transform: translateY(-2px) !important;
+  }
+
+  i {
+    font-size: 1.1em !important;
+    background: transparent !important;
+    color: inherit !important;
   }
 }
 
-.dark-mode .lang-switcher {
-  border-color: $buttonColor;
-  color: $textColorDark;
+/* Dark mode overrides */
+.dark-mode {
 
-  &:hover {
-    background: $buttonColor;
-    color: white;
+  .lang-switcher,
+  .search-trigger {
+    border-color: $buttonColor !important;
+    color: white !important;
+
+    &:hover {
+      background-color: $buttonColor !important;
+      color: white !important;
+      box-shadow: 0 0 25px $buttonColor !important;
+    }
   }
 }
