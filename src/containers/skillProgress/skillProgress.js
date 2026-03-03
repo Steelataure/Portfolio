@@ -1,6 +1,6 @@
 import React from "react";
 import "./Progress.scss";
-import { illustration, translations } from "../../portfolio";
+import { illustration } from "../../portfolio";
 import { useLanguage } from "../../contexts/LanguageContext";
 import { Fade } from "react-reveal";
 import Build from "../../assets/lottie/build";
@@ -8,7 +8,6 @@ import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 
 export default function StackProgress() {
   const { language } = useLanguage();
-  const t = translations[language];
   const techStack = {
     viewSkillBars: false,
     experience: [],

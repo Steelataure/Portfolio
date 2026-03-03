@@ -3,11 +3,9 @@ import Headroom from "react-headroom";
 import "./Header.scss";
 import { translations } from "../../portfolio";
 import { useLanguage } from "../../contexts/LanguageContext";
-import StyleContext from "../../contexts/StyleContext";
 
 function Header() {
   const { language, changeLanguage } = useLanguage();
-  const { isDark } = React.useContext(StyleContext);
   const t = translations[language];
 
   const viewExperience = t.workExperiences.display;

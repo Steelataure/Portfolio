@@ -1,6 +1,4 @@
 import React, { useState, useEffect, lazy, Suspense } from "react";
-import { translations } from "../../portfolio";
-import { useLanguage } from "../../contexts/LanguageContext";
 import Contact from "../contact/Contact";
 import Loading from "../loading/Loading";
 
@@ -8,13 +6,12 @@ const renderLoader = () => <Loading />;
 const GithubProfileCard = lazy(() =>
   import("../../components/githubProfileCard/GithubProfileCard")
 );
+const openSource = {
+  showGithubProfile: "true",
+  display: false
+};
+
 export default function Profile() {
-  const { language } = useLanguage();
-  const t = translations[language];
-  const openSource = {
-    showGithubProfile: "true",
-    display: false
-  };
 
   const [prof, setrepo] = useState([]);
   function setProfileFunction(array) {

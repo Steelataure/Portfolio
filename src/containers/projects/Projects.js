@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext, Suspense, lazy } from "react";
 import "./Project.scss";
 import Button from "../../components/button/Button";
-import { socialMediaLinks, translations } from "../../portfolio";
+import { socialMediaLinks } from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 import { useLanguage } from "../../contexts/LanguageContext";
 import Loading from "../../containers/loading/Loading";
@@ -14,7 +14,6 @@ export default function Projects() {
   const [repo, setrepo] = useState([]);
   const { isDark } = useContext(StyleContext);
   const { language } = useLanguage();
-  const t = translations[language];
   const openSource = {
     showGithubProfile: "true",
     display: false
