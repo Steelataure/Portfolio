@@ -43,13 +43,16 @@
 .project-card {
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
+  background: rgba(255, 255, 255, 0.03) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
   border-radius: 20px;
   overflow: hidden;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  border: 1px solid rgba($skillsColor, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
   height: 100%;
   position: relative;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3) !important;
 
   // Vibrant top accent
   &::before {
@@ -62,28 +65,19 @@
     background: linear-gradient(90deg, $skillsColor, lighten($skillsColor, 20%));
     z-index: 10;
   }
-}
-
-.project-card-light {
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
 
   &:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 25px 50px -12px rgba($skillsColor, 0.25);
-    border-color: rgba($skillsColor, 0.4);
+    transform: translateY(-12px) scale(1.02);
+    border-color: rgba($skillsColor, 0.6) !important;
+    box-shadow: 0 15px 45px rgba($skillsColor, 0.3) !important;
+    background: rgba(255, 255, 255, 0.05) !important;
   }
 }
+
+.project-card-light {}
 
 .project-card-dark {
-  background-color: #1c2128;
-  border-color: rgba($skillsColor, 0.2);
-  box-shadow: 0 15px 35px -15px rgba(0, 0, 0, 0.6);
-
-  &:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 25px 45px -15px rgba($skillsColor, 0.4);
-    border-color: rgba($skillsColor, 0.6);
-  }
+  background: rgba(255, 255, 255, 0.02) !important;
 }
 
 .project-image {

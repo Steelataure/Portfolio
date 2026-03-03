@@ -1,23 +1,23 @@
 @import "../../_globalColor";
 
-.experience-card {
-  position: relative;
-  background-color: $lightBackground2;
-  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
-  border-radius: 10px;
-  border: 1px solid $lightBorder1;
-}
-
+.experience-card,
 .experience-card-dark {
   position: relative;
-  background-color: $darkBackground;
-  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
-  border-radius: 10px;
-  border: 1px solid $lightBorder1;
-}
+  background: rgba(255, 255, 255, 0.03) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3) !important;
+  border-radius: 12px !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+  overflow: hidden;
 
-.experience-card:hover {
-  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+  &:hover {
+    transform: translateY(-5px) scale(1.01);
+    border-color: rgba($buttonColor, 0.6) !important;
+    box-shadow: 0 10px 40px rgba($buttonColor, 0.2) !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+  }
 }
 
 .experience-banner {
