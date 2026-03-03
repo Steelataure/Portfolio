@@ -20,12 +20,10 @@ import CommandPalette from "../components/commandPalette/CommandPalette";
 import { splashScreen } from "../portfolio";
 import { StyleProvider } from "../contexts/StyleContext";
 import { LanguageProvider } from "../contexts/LanguageContext";
-import { useLocalStorage } from "../hooks/useLocalStorage";
 import "./Main.scss";
 
 const Main = () => {
-  const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
-  const [isDark, setIsDark] = useLocalStorage("isDark", true);
+  const [isDark] = useState(true);
   const [isShowingSplashAnimation, setIsShowingSplashAnimation] =
     useState(true);
 
@@ -49,7 +47,7 @@ const Main = () => {
   };
 
   const changeTheme = () => {
-    setIsDark(!isDark);
+    // Theme is now permanently dark
   };
 
   return (
