@@ -13,7 +13,7 @@ const illustration = {
 const socialMediaLinks = {
   github: "https://github.com/Steelataure",
   linkedin: "https://www.linkedin.com/in/alexandre-buisset/",
-  gmail: "alexandre0312@orange.fr",
+  gmail: "alexandre.buisset0@gmail.com",
   display: true
 };
 
@@ -60,7 +60,7 @@ const portfolioFR = {
     username: "Alexandre Buisset",
     title: "Alexandre Buisset",
     subTitle: "Ingénieur Logiciel & DevOps passionné par l'industrialisation, l'architecture distribuée et la haute disponibilité des systèmes critiques.",
-    resumeLink: "https://drive.google.com/file/d/1X9-zZraq_5g6Q2Hl4tkxfUVZ73XDdGGS/view?usp=sharing",
+    resumeLink: "https://drive.google.com/file/d/1IVmEC-fBd5jzaP5ua3w9gPSb2gJ2VY9d/view?usp=sharing",
     displayGreeting: true
   },
   skillsSection: {
@@ -84,7 +84,7 @@ const portfolioFR = {
         subHeader: "Ingénieur en Informatique",
         duration: "2023 - 2026",
         desc: "Majeure Génie Logiciel & Systèmes d'Information",
-        descBullets: ["En cours"]
+        descBullets: ["Obtenu"]
       },
       {
         schoolName: "UQAC",
@@ -116,7 +116,7 @@ const portfolioFR = {
     display: true,
     experience: [
       {
-        role: "Ingénieur logiciel",
+        role: "Ingénieur logiciel & DevOps",
         company: "BNP Paribas CIB",
         companylogo: require("./assets/images/bnp.jpg"),
         date: "2024 - 2026",
